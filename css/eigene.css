@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Eigene Ergänzungen zur Vorlage (Ariyana, Webflow).
+   Hier stehen nur Regeln, die die Vorlage selbst nicht hat.
+   ========================================================================== */
+
+/* Elemente, die per Animation eingeblendet werden, erst verstecken,
+   wenn JavaScript läuft. Sicherheitsnetz: nach 3 s trotzdem sichtbar. */
+@keyframes sicherheitsnetz { to { visibility: visible; } }
+html.js:not(.anim-bereit) :is([data-button-text], [data-stroke="no"], [data-stroke="yes"], [data-slide-card],
+  [data-menu-text]:nth-of-type(1), [data-menu-text]:nth-of-type(2), .brands_ticker_row, [data-title-anim],
+  [data-floating-badge], [data-text-anim], [data-title], [data-image-span], .service_video_wrapper) {
+  visibility: hidden;
+  animation: sicherheitsnetz 0s 3s forwards;
+}
+
+/* Tastatur-Fokus gut sichtbar (Kontrast mind. 3:1 auf hell und dunkel) */
+:focus-visible {
+  outline: 3px solid #ff691e;
+  outline-offset: 3px;
+}
+
+/* Skip-Link */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 10000;
+  padding: .75rem 1rem;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+}
+.skip-link:focus { top: 1rem; }
+
+/* Farbflächen, die in der Vorlage als Inline-Style gesetzt waren */
+[data-bg] { background-color: var(--bg-farbe, transparent); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
