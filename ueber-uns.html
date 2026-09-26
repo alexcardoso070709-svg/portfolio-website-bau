@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="css/vorlage.css">
 <link rel="stylesheet" href="css/lenis.css">
 <link rel="stylesheet" href="css/eigene.css">
+<link rel="stylesheet" href="css/seiten.css">
 <script src="js/js-check.js"></script>
 <script defer src="js/vendor/gsap.min.js"></script>
 <script defer src="js/vendor/ScrollTrigger.min.js"></script>
@@ -31,11 +32,13 @@
 <script defer src="js/main.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
   <div class="page_wrapper">
+    <!-- ===== ABSCHNITT: Kopfzeile & Menü (auf allen Seiten gleich – Änderungen hier auch auf den anderen Seiten machen) ===== -->
     <div class="navigation is-secondary w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" id="main-nav" role="banner">
       <div class="navigation_wrapper"><a class="brand is-dark w-nav-brand" href="index.html"><p class="logo_text is-dark">// ACVISUALS</p></a>
         <nav class="nav_menu w-nav-menu" role="navigation">
-          <div class="nav_menu_wrapper"><a aria-current="page" class="nav_link is-secondary w-inline-block w--current" data-link="" href="ueber-uns.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Über uns</p><p class="nav_link_text is-dark _2" data-link-text="">Über uns</p></div></a><a class="nav_link is-secondary w-inline-block" data-link="" href="projekte.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Projekte</p><p class="nav_link_text is-dark _2" data-link-text="">Projekte</p></div></a><a class="nav_link is-secondary w-inline-block" data-link="" href="leistungen.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">services</p><p class="nav_link_text is-dark _2" data-link-text="">services</p></div></a><a class="nav_link is-secondary w-inline-block" data-link="" href="kontakt.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">contact</p><p class="nav_link_text is-dark _2" data-link-text="">contact</p></div></a></div>
+          <div class="nav_menu_wrapper"><a aria-current="page" class="nav_link is-secondary w-inline-block w--current" data-link="" href="ueber-uns.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Über uns</p><p class="nav_link_text is-dark _2" data-link-text="">Über uns</p></div></a><a class="nav_link is-secondary w-inline-block" data-link="" href="projekte.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Projekte</p><p class="nav_link_text is-dark _2" data-link-text="">Projekte</p></div></a><a class="nav_link is-secondary w-inline-block" data-link="" href="leistungen.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Leistungen</p><p class="nav_link_text is-dark _2" data-link-text="">Leistungen</p></div></a><a class="nav_link is-secondary w-inline-block" data-link="" href="kontakt.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Kontakt</p><p class="nav_link_text is-dark _2" data-link-text="">Kontakt</p></div></a></div>
         </nav>
         <div class="hamburger_menu_icon w-variant-f2cbe589-1fd0-33a3-fc39-1d62a9947e8a" data-menu-icon="">
           <div class="hamburger_menu_inner" data-menu-inner="">
@@ -70,37 +73,43 @@
         </div>
       </div>
     </div>
-    <section class="about_hero_section">
+    <!-- ===== ABSCHNITT: Startbild – kleine Zeile, große Überschrift und Bewertung hier ändern.
+         Das kleine Bild mitten in der Überschrift kommt aus bilder/text-bild-ueber.jpg ===== -->
+    <section class="about_hero_section" id="inhalt">
       <div class="hero_circle_secondary"></div>
       <div class="padding_global">
         <div class="container">
           <div class="about_hero_content">
             <div class="section_caption" data-w-id="fda64209-c9a2-ae54-9670-45da6393c342">
               <div class="section_caption_circle"></div>
-              <p class="section_caption_text">Inside <span class="text-italic">(the)</span> Ariyana</p>
+              <p class="section_caption_text">Einblick <span class="text-italic">(in)</span> ACVISUALS</p>
             </div>
-            <h1 class="about_hero_title" data-title="">Ariyana is a Global Creative Studio, making<span class="about_hero_title_span" data-image-span=""> </span>everything that happens on a screen</h1>
+            <h1 class="about_hero_title" data-title="">ACVISUALS ist dein Studio für Foto &amp; Video, das<span class="about_hero_title_span" data-image-span=""> </span>Marken und Momente ins Bild setzt</h1>
             <div class="about_hero_review_area">
-              <div class="users_avatar"><img alt="users avatar" loading="lazy" src="bilder/avatare.png"/></div>
+              <div class="users_avatar"><img alt="" src="bilder/avatare.png"/></div>
               <div class="review_content">
                 <div class="review_content_top">
-                  <p class="review_number">4.9</p><img alt="star icon " class="review_star" loading="lazy" src="icons/sterne.svg"/>
+                  <p class="review_number">4.9</p><img alt="" class="review_star" src="icons/sterne.svg"/>
                 </div>
-                <p class="text_small">Rating From Clients</p>
+                <p class="text_small">Bewertung von Kunden</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Zahlen & Fakten – Texte hier ändern.
+         So änderst du eine Zahl: Jede Ziffer ist eine eigene Spalte (stats_column).
+         Bei Spalten mit "is-align-top" zählt die ERSTE Ziffer, bei "is-align-bottom" die LETZTE Ziffer.
+         Beispiel 30+: erste Spalte beginnt mit 3, zweite Spalte endet mit 0, dahinter das "+" ===== -->
     <section class="about_stats_section">
       <div class="about_stats_grid">
-        <div class="about_stats_image" id="w-node-_6556c43b-3823-239a-7ef2-acd9d7fe0052-9b82cdc2"><img alt="about stats image item" class="image-cover" loading="lazy" src="bilder/ueber-statistik.jpg"/></div>
+        <div class="about_stats_image" id="w-node-_6556c43b-3823-239a-7ef2-acd9d7fe0052-9b82cdc2"><img alt="Besprechung mit Kunden bei einem Projekt" class="image-cover" loading="lazy" src="bilder/ueber-statistik.jpg"/></div>
         <div class="about_stats_item _1">
-          <p class="about_stats_item_text">We have Expert Team members to serve you</p>
+          <p class="about_stats_item_text">Unternehmen, die uns schon gebucht haben</p>
           <div class="stats_counter_visible_height" data-counter="">
             <div class="stats_column is-align-top">
-              <div class="stats_counter_number" color="">2</div>
+              <div class="stats_counter_number" color="">3</div>
               <div class="stats_counter_number">1</div>
               <div class="stats_counter_number">2</div>
               <div class="stats_counter_number">3</div>
@@ -129,10 +138,10 @@
           </div>
         </div>
         <div class="about_stats_item _2">
-          <p class="about_stats_item_text">We help to get business with $90M+ funding</p>
+          <p class="about_stats_item_text">Hochzeiten und Feiern, die wir begleitet haben</p>
           <div class="stats_counter_visible_height" data-counter="">
             <div class="stats_column is-align-top">
-              <div class="stats_counter_number" color="">9</div>
+              <div class="stats_counter_number" color="">2</div>
               <div class="stats_counter_number">1</div>
               <div class="stats_counter_number">2</div>
               <div class="stats_counter_number">3</div>
@@ -153,15 +162,15 @@
               <div class="stats_counter_number">6</div>
               <div class="stats_counter_number">7</div>
               <div class="stats_counter_number">8</div>
-              <div class="stats_counter_number">0</div>
+              <div class="stats_counter_number">5</div>
             </div>
             <div class="stats_column is-suffix">
-              <div class="stats_counter_number_suffix">m+</div>
+              <div class="stats_counter_number_suffix">+</div>
             </div>
           </div>
         </div>
         <div class="about_stats_item _3">
-          <p class="about_stats_item_text color-black">We have more than 100+ Satisfied clients</p>
+          <p class="about_stats_item_text color-black">Mehr als 100 Shootings und Drehs umgesetzt</p>
           <div class="stats_counter_visible_height" data-counter="">
             <div class="stats_column is-align-top">
               <div class="stats_counter_number" color="">1</div>
@@ -205,7 +214,7 @@
           </div>
         </div>
         <div class="about_stats_item _4">
-          <p class="about_stats_item_text">Rating from our satisfied clients</p>
+          <p class="about_stats_item_text">Bewertung unserer zufriedenen Kunden</p>
           <div class="stats_counter_visible_height" data-counter="">
             <div class="stats_column is-align-top">
               <div class="stats_counter_number" color="">4</div>
@@ -238,35 +247,36 @@
         </div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Warum wir – Überschriften, zwei kurze Texte und die drei Karten hier ändern ===== -->
     <section class="why_choose_us_section">
       <div class="padding_global">
         <div class="container">
           <div class="section_header">
             <div class="why_choose_section_header">
-              <h2 class="heading_style_h4" data-title-anim="">Why Choose Us</h2>
+              <h2 class="heading_style_h4" data-title-anim="">Warum wir</h2>
               <div class="why-choose_section_right">
-                <h2 class="heading_style_h4" data-title-anim="">We are Best </h2>
+                <h2 class="heading_style_h4" data-title-anim="">Kurz gesagt</h2>
               </div>
             </div>
             <div class="why_choose_section_info">
-              <p class="text-case-normal" data-text-anim="">We help brands and people be part of the solution. As accuse by the lead branding<br/></p>
-              <p class="text-case-normal" data-text-anim="">We partner with entrepreneurs and family businesses, and the owners to unlock the value they have built in their companies.</p>
+              <p class="text-case-normal" data-text-anim="">Wir zeigen Unternehmen und Menschen so, wie sie wirklich sind – ehrlich, nahbar und mit Stil.</p>
+              <p class="text-case-normal" data-text-anim="">Wir arbeiten mit Selbstständigen, Familienbetrieben und Privatkunden – unkompliziert, zuverlässig und mit klarem Plan.</p>
             </div>
           </div>
           <div class="why_choose_track">
             <div class="why_choose_sticky">
               <div class="why_choose_items">
                 <div class="why_choose_item">
-                  <p class="why_choose_item_sub_text">Respond within</p>
-                  <p class="why_choose_item_title">24 hours</p>
+                  <p class="why_choose_item_sub_text">Antwort innerhalb</p>
+                  <p class="why_choose_item_title">24 Stunden</p>
                 </div>
                 <div class="why_choose_item _2">
-                  <p class="why_choose_item_sub_text">Make an offer in</p>
-                  <p class="why_choose_item_title">Only 7 days</p>
+                  <p class="why_choose_item_sub_text">Dein Angebot in</p>
+                  <p class="why_choose_item_title">nur 3 Tagen</p>
                 </div>
                 <div class="why_choose_item _3">
-                  <p class="why_choose_item_sub_text">Close the deal in</p>
-                  <p class="why_choose_item_title">Just 60 days</p>
+                  <p class="why_choose_item_sub_text">Fertige Bilder in</p>
+                  <p class="why_choose_item_title">ca. 2 Wochen</p>
                 </div>
               </div>
             </div>
@@ -274,41 +284,43 @@
         </div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Team – Namen, Aufgaben und Fotos (bilder/team-1.jpg … team-4.jpg) hier ändern.
+         Arbeitest du allein? Dann z. B. nur die erste Karte behalten oder Partner/Freelancer zeigen. ===== -->
     <section class="team_section">
       <div class="container">
         <div class="section_header">
-          <h2 class="text-center" data-title-anim="">Expert Members</h2>
-          <div class="floating_text is-team" data-floating-badge="">20 team Member</div>
+          <h2 class="text-center" data-title-anim="">Unser Team</h2>
+          <div class="floating_text is-team" data-floating-badge="">4 Köpfe, 1 Ziel</div>
         </div>
         <div class="track">
           <div class="sticky">
             <div class="team_cards">
               <div class="team_card">
-                <div class="member_image_wrap"><img alt="Portrait of a person wearing a red coat with flowing orange hair partially obscuring their face." class="image-cover" loading="lazy" src="bilder/team-1.jpg"/></div>
+                <div class="member_image_wrap"><img alt="Porträtfoto von Max Mustermann" class="image-cover" loading="lazy" src="bilder/team-1.jpg"/></div>
                 <div class="team_content">
-                  <h3 class="text-xxl">Alex Newman</h3>
-                  <p class="text-md text-case-normal">Co-Founder &amp; Lead Designer</p>
+                  <h3 class="text-xxl">Max Mustermann</h3>
+                  <p class="text-md text-case-normal">Fotografie &amp; Leitung</p>
                 </div>
               </div>
               <div class="team_card _2">
-                <div class="member_image_wrap"><img alt="Close-up of a woman with braided hair wearing orange-tinted aviator sunglasses and an orange turtleneck sweater." class="image-cover" loading="lazy" src="bilder/team-2.jpg"/></div>
+                <div class="member_image_wrap"><img alt="Porträtfoto von Erika Musterfrau" class="image-cover" loading="lazy" src="bilder/team-2.jpg"/></div>
                 <div class="team_content">
-                  <h3 class="text-xxl">Leslie Alexander</h3>
-                  <p class="text-md text-case-normal">Marketing Coordinator</p>
+                  <h3 class="text-xxl">Erika Musterfrau</h3>
+                  <p class="text-md text-case-normal">Video &amp; Schnitt</p>
                 </div>
               </div>
               <div class="team_card _3">
-                <div class="member_image_wrap"><img alt="Close-up portrait of a person wearing a bright orange knit hat and a high-neck sweater with a colorful motion blur effect." class="image-cover" loading="lazy" src="bilder/team-3.jpg"/></div>
+                <div class="member_image_wrap"><img alt="Porträtfoto von Jonas Beispiel" class="image-cover" loading="lazy" src="bilder/team-3.jpg"/></div>
                 <div class="team_content">
-                  <h3 class="text-xxl">Savannah Nguyen</h3>
-                  <p class="text-md text-case-normal">Web Designer</p>
+                  <h3 class="text-xxl">Jonas Beispiel</h3>
+                  <p class="text-md text-case-normal">Drohne &amp; Technik</p>
                 </div>
               </div>
               <div class="team_card _4">
-                <div class="member_image_wrap"><img alt="Young woman wearing orange knit beanie, orange-tinted sunglasses, orange scarf, and yellow jacket against a light blue background." class="image-cover" loading="lazy" src="bilder/team-4.jpg"/></div>
+                <div class="member_image_wrap"><img alt="Porträtfoto von Lea Platzhalter" class="image-cover" loading="lazy" src="bilder/team-4.jpg"/></div>
                 <div class="team_content">
-                  <h3 class="text-xxl">Albert Flores</h3>
-                  <p class="text-md text-case-normal">Development Assistant</p>
+                  <h3 class="text-xxl">Lea Platzhalter</h3>
+                  <p class="text-md text-case-normal">Organisation</p>
                 </div>
               </div>
             </div>
@@ -316,6 +328,8 @@
         </div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Kundenlogos & Kundenstimme – Laufschrift, Zitat und Logos (icons/kunde-*.svg) hier ändern.
+         Die vielen leeren "box"-Elemente zeichnen nur das Raster im Hintergrund – bitte nicht löschen. ===== -->
     <div class="brands_section">
       <div class="brands_wrapper">
         <div class="brands_grid">
@@ -565,7 +579,7 @@
         <div class="brands_grid absolute" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b51ec-2b3b50f7">
           <div class="brands_ticker" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b51ed-2b3b50f7">
             <div class="brands_ticker_row">
-              <p class="brands_ticker_text">novators</p>
+              <p class="brands_ticker_text">Region</p>
               <div class="brands_ticker_icon w-embed"><svg fill="none" height="20" viewBox="0 0 17 20" width="17" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.5">
 <path d="M7.95238 0H10.0476V2.02765H7.95238V0Z" fill="white"></path>
@@ -580,7 +594,7 @@
 <path d="M0 17.9723H2.09524V20H0V17.9723Z" fill="white"></path>
 </g>
 </svg></div>
-              <p class="brands_ticker_text">Trusted by industry Innovators</p>
+              <p class="brands_ticker_text">Gebucht von Teams aus der Region</p>
               <div class="brands_ticker_icon w-embed"><svg fill="none" height="20" viewBox="0 0 17 20" width="17" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.5">
 <path d="M7.95238 0H10.0476V2.02765H7.95238V0Z" fill="white"></path>
@@ -595,7 +609,7 @@
 <path d="M0 17.9723H2.09524V20H0V17.9723Z" fill="white"></path>
 </g>
 </svg></div>
-              <p class="brands_ticker_text">Trusted</p>
+              <p class="brands_ticker_text">Gebucht</p>
               <div class="brands_ticker_icon w-embed"><svg fill="none" height="20" viewBox="0 0 17 20" width="17" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.5">
 <path d="M7.95238 0H10.0476V2.02765H7.95238V0Z" fill="white"></path>
@@ -612,7 +626,7 @@
 </svg></div>
             </div>
             <div class="brands_ticker_row">
-              <p class="brands_ticker_text">novators</p>
+              <p class="brands_ticker_text">Region</p>
               <div class="brands_ticker_icon w-embed"><svg fill="none" height="20" viewBox="0 0 17 20" width="17" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.5">
 <path d="M7.95238 0H10.0476V2.02765H7.95238V0Z" fill="white"></path>
@@ -627,7 +641,7 @@
 <path d="M0 17.9723H2.09524V20H0V17.9723Z" fill="white"></path>
 </g>
 </svg></div>
-              <p class="brands_ticker_text">Trusted by industry Innovators</p>
+              <p class="brands_ticker_text">Gebucht von Teams aus der Region</p>
               <div class="brands_ticker_icon w-embed"><svg fill="none" height="20" viewBox="0 0 17 20" width="17" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.5">
 <path d="M7.95238 0H10.0476V2.02765H7.95238V0Z" fill="white"></path>
@@ -642,7 +656,7 @@
 <path d="M0 17.9723H2.09524V20H0V17.9723Z" fill="white"></path>
 </g>
 </svg></div>
-              <p class="brands_ticker_text">Trusted</p>
+              <p class="brands_ticker_text">Gebucht</p>
               <div class="brands_ticker_icon w-embed"><svg fill="none" height="20" viewBox="0 0 17 20" width="17" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.5">
 <path d="M7.95238 0H10.0476V2.02765H7.95238V0Z" fill="white"></path>
@@ -660,77 +674,80 @@
             </div>
           </div>
           <div class="brands_testimony_area" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b5202-2b3b50f7">
-            <p class="brands_testimony_text" data-text-anim="">“They were quick to support, easy to work with, and fully dedicated to launching our site on time in budget.”</p>
+            <p class="brands_testimony_text" data-text-anim="">„Schnell erreichbar, angenehm im Umgang und mit vollem Einsatz dabei – unser Imagefilm war pünktlich fertig.“</p>
             <div class="brands_testimony_author_content">
-              <p class="brands_testimony_author_name">Robert Kenedy</p>
-              <p class="brands_testimony_author_designation">Head of growth @ Walton</p>
+              <p class="brands_testimony_author_name">Markus W.</p>
+              <p class="brands_testimony_author_designation">Inhaber, Handwerksbetrieb</p>
             </div>
           </div>
-          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b520a-2b3b50f7"><img alt="brand logo" class="brand_logo" loading="lazy" src="icons/kunde-1.svg"/></div>
-          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b520c-2b3b50f7"><img alt="brand logo" class="brand_logo" loading="lazy" src="icons/kunde-2.svg"/></div>
-          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b520e-2b3b50f7"><img alt="brand logo" class="brand_logo" loading="lazy" src="icons/kunde-3.svg"/></div>
-          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b5210-2b3b50f7"><img alt="brand logo" class="brand_logo" loading="lazy" src="icons/kunde-4.svg"/></div>
-          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b5212-2b3b50f7"><img alt="brand logo" class="brand_logo" loading="lazy" src="icons/kunde-4.svg"/></div>
-          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b5214-2b3b50f7"><img alt="brand logo" class="brand_logo" loading="lazy" src="icons/kunde-6.svg"/></div>
+          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b520a-2b3b50f7"><img alt="Kundenlogo" class="brand_logo" loading="lazy" src="icons/kunde-1.svg"/></div>
+          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b520c-2b3b50f7"><img alt="Kundenlogo" class="brand_logo" loading="lazy" src="icons/kunde-2.svg"/></div>
+          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b520e-2b3b50f7"><img alt="Kundenlogo" class="brand_logo" loading="lazy" src="icons/kunde-3.svg"/></div>
+          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b5210-2b3b50f7"><img alt="Kundenlogo" class="brand_logo" loading="lazy" src="icons/kunde-4.svg"/></div>
+          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b5212-2b3b50f7"><img alt="Kundenlogo" class="brand_logo" loading="lazy" src="icons/kunde-4.svg"/></div>
+          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b5214-2b3b50f7"><img alt="Kundenlogo" class="brand_logo" loading="lazy" src="icons/kunde-6.svg"/></div>
         </div>
       </div>
     </div>
+    <!-- ===== ABSCHNITT: Bilder-Kreis – kleines Schild, Überschrift, Button und die zehn Bilder (bilder/gesicht-1.jpg … gesicht-10.jpg) ===== -->
     <section class="leader_section" data-w-id="a472c650-0519-8b3b-d46a-39ea94787fc7">
       <div class="leader_section_content" data-w-id="a472c650-0519-8b3b-d46a-39ea94787fc8">
-        <div class="leader_section_badge">400+ top Brands</div>
-        <h3 class="leader_section_title">Trusted by <span class="text_gradiant">Leaders</span></h3><a aria-current="page" class="button_primary w-inline-block w--current" data-button-primary="" data-w-id="38728d2c-eb7f-cf2b-61d3-59d872520a83" href="ueber-uns.html" target=""><div class="button_line_mask_wrapper"><div class="button_line_mask" data-button-line-mask=""></div><div class="button_line_mask _2" data-button-line-mask=""></div><div class="button_line_mask _3" data-button-line-mask=""></div></div><div class="button_line" data-button-line=""></div><div class="button_text_wrapper"><p class="button_text" data-button-text="">Mehr erfahren</p><p class="button_text second_text" data-button-text="">Mehr erfahren</p></div></a>
+        <div class="leader_section_badge">Firmen &amp; Privat</div>
+        <h3 class="leader_section_title">Gebucht von <span class="text_gradiant">Machern</span></h3><a class="button_primary w-inline-block" data-button-primary="" data-w-id="38728d2c-eb7f-cf2b-61d3-59d872520a83" href="projekte.html"><div class="button_line_mask_wrapper"><div class="button_line_mask" data-button-line-mask=""></div><div class="button_line_mask _2" data-button-line-mask=""></div><div class="button_line_mask _3" data-button-line-mask=""></div></div><div class="button_line" data-button-line=""></div><div class="button_text_wrapper"><p class="button_text" data-button-text="">Projekte ansehen</p><p class="button_text second_text" data-button-text="">Projekte ansehen</p></div></a>
       </div>
       <div class="leader_circle_wrapper">
         <div class="leader_circle_item" data-w-id="75b34b45-6590-ddbb-86b0-0a178e8c2c17"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-1.jpg"/></div>
-        <div class="leader_circle_item _2"><img alt="White stylized block text reading 'TOU FIST' on a solid red background." class="leader_circle_image" loading="lazy" src="bilder/gesicht-2.jpg"/></div>
-        <div class="leader_circle_item _3"><img alt="Bright yellow background with a black business card featuring the name Siddhant Tiwari and a large bold yellow text block below reading 'HOLA'." class="leader_circle_image" loading="lazy" src="bilder/gesicht-3.jpg"/></div>
-        <div class="leader_circle_item _4"><img alt='"OH MY!" text logo in white inside a speech bubble on a pink background.' class="leader_circle_image" loading="lazy" src="bilder/gesicht-4.jpg"/></div>
-        <div class="leader_circle_item _5"><img alt="Bold white text reading 'IS READY' on a vibrant blue background with geometric shapes." class="leader_circle_image" loading="lazy" src="bilder/gesicht-5.jpg"/></div>
-        <div class="leader_circle_item _6"><img alt="The Bomb Shelter graffiti artist shop, studio, and gallery logo on yellow background." class="leader_circle_image" loading="lazy" src="bilder/gesicht-6.jpg"/></div>
-        <div class="leader_circle_item _7"><img alt="Qerra wordmark logo in white on a pink and orange gradient background." class="leader_circle_image" loading="lazy" src="bilder/gesicht-7.jpg"/></div>
-        <div class="leader_circle_item _8"><img alt="WAKU WAKU brand logo in bold black and white on a green background." class="leader_circle_image" loading="lazy" src="bilder/gesicht-8.jpg"/></div>
-        <div class="leader_circle_item _9"><img alt="Transparent 3D geometric shape resembling an angular loop in front of white text on a purple background." class="leader_circle_image" loading="lazy" src="bilder/gesicht-9.jpg"/></div>
-        <div class="leader_circle_item _10"><img alt="Stacked green boxes with the text 'REACH YOUR PEAK' and 'Peak' logo on a bright green background with geometric lines." class="leader_circle_image" loading="lazy" src="bilder/gesicht-10.jpg"/></div>
+        <div class="leader_circle_item _2"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-2.jpg"/></div>
+        <div class="leader_circle_item _3"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-3.jpg"/></div>
+        <div class="leader_circle_item _4"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-4.jpg"/></div>
+        <div class="leader_circle_item _5"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-5.jpg"/></div>
+        <div class="leader_circle_item _6"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-6.jpg"/></div>
+        <div class="leader_circle_item _7"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-7.jpg"/></div>
+        <div class="leader_circle_item _8"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-8.jpg"/></div>
+        <div class="leader_circle_item _9"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-9.jpg"/></div>
+        <div class="leader_circle_item _10"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-10.jpg"/></div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Ablauf „So arbeiten wir“ – fünf Schritte: links Name, Mitte Beschreibung, rechts Ergebnis ===== -->
     <section class="awards_section">
       <div class="container">
         <div class="section_header">
-          <h2 class="text-center" data-title-anim="">Awards &amp; Trophy</h2>
-          <div class="floating_text is-team" data-floating-badge="">5 Star Services</div>
+          <h2 class="text-center" data-title-anim="">So arbeiten wir</h2>
+          <div class="floating_text is-team" data-floating-badge="">5 klare Schritte</div>
         </div>
         <div class="award_item is-first" data-w-id="b7d4ea89-17b7-1ecb-833d-96e2d7f5e388">
-          <p class="award_name">Pixelry</p>
-          <p class="award_number">3x   creative agency of the day</p>
-          <p class="award_status">Winner</p>
+          <p class="award_name">Kennenlernen</p>
+          <p class="award_number">01   Wünsche, Ziele und Stil besprechen</p>
+          <p class="award_status">Gespräch</p>
           <div class="award_item_background"></div>
         </div>
         <div class="award_item">
-          <p class="award_name">Designova</p>
-          <p class="award_number" id="w-node-c7e43307-1ff5-9643-b5b6-c65289e341d0-9b82cdc2">5x   honorable mentioned</p>
-          <p class="award_status" id="w-node-c7e43307-1ff5-9643-b5b6-c65289e341d2-9b82cdc2">Mentioned</p>
+          <p class="award_name">Konzept</p>
+          <p class="award_number" id="w-node-c7e43307-1ff5-9643-b5b6-c65289e341d0-9b82cdc2">02   Ideen, Drehplan und Termin festlegen</p>
+          <p class="award_status" id="w-node-c7e43307-1ff5-9643-b5b6-c65289e341d2-9b82cdc2">Angebot</p>
           <div class="award_item_background"></div>
         </div>
         <div class="award_item">
-          <p class="award_name">Creatixly</p>
-          <p class="award_number" id="w-node-_6e3493aa-a963-9105-8a86-beaad92f76e6-9b82cdc2">2x   Featured design of the week</p>
-          <p class="award_status" id="w-node-_6e3493aa-a963-9105-8a86-beaad92f76e8-9b82cdc2">Winner</p>
+          <p class="award_name">Shooting</p>
+          <p class="award_number" id="w-node-_6e3493aa-a963-9105-8a86-beaad92f76e6-9b82cdc2">03   Foto- und Videoproduktion vor Ort</p>
+          <p class="award_status" id="w-node-_6e3493aa-a963-9105-8a86-beaad92f76e8-9b82cdc2">Umsetzung</p>
           <div class="award_item_background"></div>
         </div>
         <div class="award_item">
-          <p class="award_name">Formatic</p>
-          <p class="award_number" id="w-node-_86937463-c157-a42c-9acf-4f7b47e6e76d-9b82cdc2">8x   Best design of the day</p>
-          <p class="award_status" id="w-node-_86937463-c157-a42c-9acf-4f7b47e6e76f-9b82cdc2">Winner</p>
+          <p class="award_name">Bearbeitung</p>
+          <p class="award_number" id="w-node-_86937463-c157-a42c-9acf-4f7b47e6e76d-9b82cdc2">04   Auswahl, Retusche, Schnitt und Farbe</p>
+          <p class="award_status" id="w-node-_86937463-c157-a42c-9acf-4f7b47e6e76f-9b82cdc2">Feinschliff</p>
           <div class="award_item_background"></div>
         </div>
         <div class="award_item">
-          <p class="award_name">Visualyn</p>
-          <p class="award_number" id="w-node-_3d7b5d98-a7ec-d8d5-eca9-fc43f60ffa6e-9b82cdc2">1x   agency of the year</p>
-          <p class="award_status" id="w-node-_3d7b5d98-a7ec-d8d5-eca9-fc43f60ffa70-9b82cdc2">Awarded</p>
+          <p class="award_name">Übergabe</p>
+          <p class="award_number" id="w-node-_3d7b5d98-a7ec-d8d5-eca9-fc43f60ffa6e-9b82cdc2">05   Online-Galerie und fertige Dateien</p>
+          <p class="award_status" id="w-node-_3d7b5d98-a7ec-d8d5-eca9-fc43f60ffa70-9b82cdc2">Fertig</p>
           <div class="award_item_background"></div>
         </div>
       </div>
     </section>
+    <!-- Deko-Streifen zwischen zwei Abschnitten (nicht ändern) -->
     <div class="border">
       <div class="border_line" data-bg="#f9ebe4" id=""></div>
       <div class="border_line _2" data-bg="#f9ebe4" id=""></div>
@@ -738,22 +755,24 @@
       <div class="border_line _4" data-bg="#f9ebe4" id=""></div>
       <div class="border_line _5" data-bg="#f9ebe4" id=""></div>
     </div>
+    <!-- ===== ABSCHNITT: Hinter den Kulissen – Überschrift, Text und vier Bilder (bilder/einblick-1.jpg … einblick-4.jpg) ===== -->
     <section class="life_section">
       <div class="padding_global">
         <div class="container">
           <div class="section_header is_life">
-            <h2 class="heading-style-h3" data-title-anim="">Life at Ariyana Studio</h2>
-            <p data-text-anim="">We’re with you all the way from the pilot to beyond. A great Team</p>
+            <h2 class="heading-style-h3" data-title-anim="">Hinter den Kulissen</h2>
+            <p data-text-anim="">Vom ersten Kaffee bis zum letzten Schnitt – ein Blick in unseren Alltag.</p>
           </div>
           <div class="life_images" data-slide-cards="">
-            <div class="life_image_item" data-slide-card="" data-w-id="3c266309-132e-43c1-a7bb-7450a6c79c22"><img alt="Young woman in an orange striped shirt holding a camera on a tripod in a busy indoor space with abstract orange and white wall art." class="image-cover" loading="lazy" src="bilder/einblick-1.jpg"/></div>
-            <div class="life_image_item card_two" data-slide-card="" data-w-id="3c266309-132e-43c1-a7bb-7450a6c79c24"><img alt="Bright modern open-plan office with a large red triangular ceiling feature and rows of desks with computers." class="image-cover" loading="lazy" src="bilder/einblick-2.jpg"/></div>
-            <div class="life_image_item card_three" data-slide-card="" data-w-id="3c266309-132e-43c1-a7bb-7450a6c79c26"><img alt="Three women standing around a white table with a laptop in a pink wall office, engaged in discussion." class="image-cover" loading="lazy" src="bilder/einblick-3.jpg"/></div>
-            <div class="life_image_item card_four" data-slide-card="" data-w-id="3c266309-132e-43c1-a7bb-7450a6c79c28" id="w-node-_3c266309-132e-43c1-a7bb-7450a6c79c28-9b82cdc2"><img alt="Two people sitting at a table with a laptop, one wearing an orange hoodie and the other a red beanie holding a mug, with pastries on the table." class="image-cover" loading="lazy" src="bilder/einblick-4.jpg"/></div>
+            <div class="life_image_item" data-slide-card="" data-w-id="3c266309-132e-43c1-a7bb-7450a6c79c22"><img alt="Kamera auf dem Stativ wird für einen Dreh eingerichtet" class="image-cover" loading="lazy" src="bilder/einblick-1.jpg"/></div>
+            <div class="life_image_item card_two" data-slide-card="" data-w-id="3c266309-132e-43c1-a7bb-7450a6c79c24"><img alt="Heller Raum als Location für ein Shooting" class="image-cover" loading="lazy" src="bilder/einblick-2.jpg"/></div>
+            <div class="life_image_item card_three" data-slide-card="" data-w-id="3c266309-132e-43c1-a7bb-7450a6c79c26"><img alt="Bildauswahl gemeinsam mit Kundinnen am Laptop" class="image-cover" loading="lazy" src="bilder/einblick-3.jpg"/></div>
+            <div class="life_image_item card_four" data-slide-card="" data-w-id="3c266309-132e-43c1-a7bb-7450a6c79c28" id="w-node-_3c266309-132e-43c1-a7bb-7450a6c79c28-9b82cdc2"><img alt="Entspanntes Vorgespräch bei Kaffee und Laptop" class="image-cover" loading="lazy" src="bilder/einblick-4.jpg"/></div>
           </div>
         </div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Laufschrift mit Anfrage-Button – Text in allen vier Zeilen gleich ändern ===== -->
     <section class="cta_section">
       <div class="cta_ticker_row">
         <h2 class="cta_ticker_text" data-stroke="no">Lass uns gemeinsam etwas Großes erschaffen</h2>
@@ -768,6 +787,7 @@
 <path d="M2 11.9998C0.89542 11.9998 1.8012e-07 12.8954 1.66951e-07 13.9998C0.000140154 15.1044 0.89552 15.9998 2 15.9998L26.5214 15.9998C25.4926 17.1468 24.1158 18.4373 22.6894 19.6757C21.2246 20.9475 19.7528 22.1272 18.6446 22.9921C18.0918 23.4234 16.9772 24.277 16.6562 24.5194C15.905 25.1997 15.7752 26.3516 16.3886 27.1854C17.0436 28.0744 18.2962 28.2654 19.1856 27.6112C19.5208 27.358 20.5336 26.5927 21.1054 26.1464C22.2472 25.2554 23.7756 24.0278 25.3106 22.6952C26.8354 21.3713 28.412 19.9035 29.623 18.5331C30.2264 17.8504 30.7824 17.145 31.1972 16.457C31.5792 15.8236 32 14.952 32 13.9998L31.9804 13.6464C31.8946 12.8338 31.5312 12.0988 31.1972 11.5448C30.7824 10.8566 30.2264 10.1496 29.623 9.4666C28.4122 8.09621 26.8354 6.62861 25.3106 5.3046C23.7756 3.972 22.2472 2.74441 21.1054 1.85341C20.5336 1.40721 19.5208 0.641804 19.1856 0.388605C18.2962 -0.265795 17.0454 -0.0745943 16.3906 0.814406C15.7766 1.6482 15.9048 2.7998 16.6562 3.48041C16.6562 3.48041 17.1502 3.8612 17.3106 3.9824C17.6314 4.2248 18.0918 4.5764 18.6446 5.0076C19.7528 5.8726 21.2246 7.0522 22.6894 8.3242C24.1158 9.5626 25.4926 10.8528 26.5214 11.9998L2 11.9998Z" fill="white"></path>
 </svg></div></div></div></a>
     </section>
+    <!-- Deko-Streifen über der Fußzeile (nicht ändern) -->
     <div class="border w-variant-cb23eb3a-188e-4961-4b60-4654cb231014">
       <div class="border_line" data-bg="#000" id=""></div>
       <div class="border_line _2" data-bg="#000" id=""></div>
@@ -775,6 +795,7 @@
       <div class="border_line _4" data-bg="#000" id=""></div>
       <div class="border_line _5" data-bg="#000" id=""></div>
     </div>
+    <!-- ===== ABSCHNITT: Fußzeile (auf allen Seiten gleich) ===== -->
     <footer class="footer">
       <div class="padding_global">
         <div class="container">

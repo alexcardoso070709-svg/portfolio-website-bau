@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="css/vorlage.css">
 <link rel="stylesheet" href="css/lenis.css">
 <link rel="stylesheet" href="css/eigene.css">
+<link rel="stylesheet" href="css/seiten.css">
 <script src="js/js-check.js"></script>
 <script defer src="js/vendor/gsap.min.js"></script>
 <script defer src="js/vendor/ScrollTrigger.min.js"></script>
@@ -31,11 +32,13 @@
 <script defer src="js/main.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
   <div class="page_wrapper">
+    <!-- ===== ABSCHNITT: Kopfzeile und Menü (auf allen Seiten gleich) ===== -->
     <div class="navigation is-secondary w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" id="main-nav" role="banner">
       <div class="navigation_wrapper"><a class="brand is-dark w-nav-brand" href="index.html"><p class="logo_text is-dark">// ACVISUALS</p></a>
         <nav class="nav_menu w-nav-menu" role="navigation">
-          <div class="nav_menu_wrapper"><a class="nav_link is-secondary w-inline-block" data-link="" href="ueber-uns.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Über uns</p><p class="nav_link_text is-dark _2" data-link-text="">Über uns</p></div></a><a class="nav_link is-secondary w-inline-block" data-link="" href="projekte.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Projekte</p><p class="nav_link_text is-dark _2" data-link-text="">Projekte</p></div></a><a aria-current="page" class="nav_link is-secondary w-inline-block w--current" data-link="" href="leistungen.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">services</p><p class="nav_link_text is-dark _2" data-link-text="">services</p></div></a><a class="nav_link is-secondary w-inline-block" data-link="" href="kontakt.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">contact</p><p class="nav_link_text is-dark _2" data-link-text="">contact</p></div></a></div>
+          <div class="nav_menu_wrapper"><a class="nav_link is-secondary w-inline-block" data-link="" href="ueber-uns.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Über uns</p><p class="nav_link_text is-dark _2" data-link-text="">Über uns</p></div></a><a class="nav_link is-secondary w-inline-block" data-link="" href="projekte.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Projekte</p><p class="nav_link_text is-dark _2" data-link-text="">Projekte</p></div></a><a aria-current="page" class="nav_link is-secondary w-inline-block w--current" data-link="" href="leistungen.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Leistungen</p><p class="nav_link_text is-dark _2" data-link-text="">Leistungen</p></div></a><a class="nav_link is-secondary w-inline-block" data-link="" href="kontakt.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Kontakt</p><p class="nav_link_text is-dark _2" data-link-text="">Kontakt</p></div></a></div>
         </nav>
         <div class="hamburger_menu_icon w-variant-f2cbe589-1fd0-33a3-fc39-1d62a9947e8a" data-menu-icon="">
           <div class="hamburger_menu_inner" data-menu-inner="">
@@ -70,15 +73,16 @@
         </div>
       </div>
     </div>
-    <section class="service_hero_section">
+    <!-- ===== ABSCHNITT: Startbild Leistungen (Titel + Video) – Texte hier ändern ===== -->
+    <section class="service_hero_section" id="inhalt">
       <div class="padding_global">
         <div class="container">
           <div class="service_hero_content">
             <div class="section_caption" data-w-id="fda64209-c9a2-ae54-9670-45da6393c342">
               <div class="section_caption_circle"></div>
-              <p class="section_caption_text">Experience <span class="text-italic">(of)</span> Ariyana</p>
+              <p class="section_caption_text">Einblick <span class="text-italic">(in)</span> unsere Arbeit</p>
             </div>
-            <h1 class="service_hero_title" data-title="">Discover The Creativity &amp; Our<span class="service_hero_title_span" data-image-span=""> </span>Expertise</h1>
+            <h1 class="service_hero_title" data-title="">Entdecke unsere Erfahrung und unser<span class="service_hero_title_span" data-image-span=""> </span>Können</h1>
             <div class="scroll_indicatior">
               <div class="scroll_indicator_icon w-embed" data-w-id="6fbe3379-498c-be5e-ea75-3dee039e4b70"><svg fill="none" height="26" viewBox="0 0 16 26" width="16" xmlns="http://www.w3.org/2000/svg">
 <path clip-rule="evenodd" d="M8.39161 22.5461C9.03634 20.3173 10.0813 18.7392 11.241 17.6581C12.8959 16.1152 14.766 15.6 16 15.6V16.6884C14.9092 16.6884 13.21 17.1528 11.7128 18.5486C10.2306 19.9304 8.78549 22.2406 8.47059 26H7.52941C7.21451 22.2406 5.7694 19.9304 4.28723 18.5486C2.79001 17.1528 1.09077 16.6884 0 16.6884V15.6C1.23405 15.6 3.10409 16.1152 4.75904 17.6581C5.85383 18.6788 6.84641 20.1424 7.4965 22.1782V0H8.39161V22.5461Z" fill="currentColor" fill-rule="evenodd"></path>
@@ -90,47 +94,48 @@
       <div class="service_hero_visual_elements">
         <div class="service_hero_circle"></div>
         <div class="service_hero_circle _2"></div>
-      </div><img alt="design-shape" class="service_hero_visual_image" loading="lazy" src="icons/design-form.svg"/>
+      </div><img alt="" class="service_hero_visual_image" loading="lazy" src="icons/design-form.svg"/>
     </section>
     <div class="service_video_wrapper">
       <div class="service_video w-background-video w-background-video-atom">
         <video autoplay="" data-object-fit="cover" id="92d74cf7-ed8d-60ef-56e8-0af1d04676e2-video" loop="" muted="" playsinline="" poster="bilder/leistungen-film.jpg" preload="none">
           <source src="videos/leistungen-film.webm" type="video/webm"/>
         </video>
-        <div aria-live="polite"><button aria-controls="92d74cf7-ed8d-60ef-56e8-0af1d04676e2-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Pause video" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Play video" loading="lazy" src="icons/play.svg"/></span></button></div>
+        <div aria-live="polite"><button aria-controls="92d74cf7-ed8d-60ef-56e8-0af1d04676e2-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Video pausieren" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Video abspielen" loading="lazy" src="icons/play.svg"/></span></button></div>
       </div>
     </div>
+    <!-- ===== ABSCHNITT: Leistungen (4 Kacheln mit Video & Unterpunkten) – Texte hier ändern ===== -->
     <section class="service_section">
       <div class="padding_global">
         <div class="container">
           <div class="section_header is_service">
-            <h2 class="service_section_title" data-title-anim="">Expert SOLUTIONS</h2>
-            <div class="floating_text is_service" data-floating-badge="">5 STAR SERVICES</div>
+            <h2 class="service_section_title" data-title-anim="">UNSERE LEISTUNGEN</h2>
+            <div class="floating_text is_service" data-floating-badge="">PERSÖNLICH BETREUT</div>
           </div>
           <div class="service_item">
             <div class="service_item_inner">
               <div class="service_item_content">
-                <h3 class="service_item_title" data-title-anim="">GRAPHICS DESIGN</h3>
+                <h3 class="service_item_title" data-title-anim="">Imagefilm &amp; Unternehmensvideo</h3>
                 <div class="service_item_tags_area">
-                  <p class="service_item_tags_subtitle">Services included:</p>
+                  <p class="service_item_tags_subtitle">Das gehört dazu:</p>
                   <div class="service_item_tags_wrapper">
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Banner Design</p>
+                      <p class="service_item_tag_text">Imagefilm</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Branding</p>
+                      <p class="service_item_tag_text">Recruiting-Video</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Illustration</p>
+                      <p class="service_item_tag_text">Social-Media-Content &amp; Reels</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Logo Design</p>
+                      <p class="service_item_tag_text">Konzept &amp; Drehbuch</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Poster Design</p>
+                      <p class="service_item_tag_text">Kamera &amp; Ton</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Packaging</p>
+                      <p class="service_item_tag_text">Schnitt &amp; Farbe</p>
                     </div>
                   </div>
                 </div>
@@ -140,7 +145,7 @@
                   <video autoplay="" data-object-fit="cover" id="7e1f1754-24b2-b323-76e0-fef38d752545-video" loop="" muted="" playsinline="" poster="bilder/leistung-1.jpg" preload="none">
                     <source src="videos/leistung-1.webm" type="video/webm"/>
                   </video>
-                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d752545-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Pause video" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Play video" loading="lazy" src="icons/play.svg"/></span></button></div>
+                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d752545-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Video pausieren" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Video abspielen" loading="lazy" src="icons/play.svg"/></span></button></div>
                 </div>
               </div>
             </div>
@@ -148,27 +153,27 @@
           <div class="service_item">
             <div class="service_item_inner">
               <div class="service_item_content">
-                <h3 class="service_item_title" data-title-anim="">UIUX Design</h3>
+                <h3 class="service_item_title" data-title-anim="">Business- &amp; Team-Fotografie</h3>
                 <div class="service_item_tags_area">
-                  <p class="service_item_tags_subtitle">Services included:</p>
+                  <p class="service_item_tags_subtitle">Das gehört dazu:</p>
                   <div class="service_item_tags_wrapper">
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">user interface</p>
+                      <p class="service_item_tag_text">Business-Porträts</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">User Experience</p>
+                      <p class="service_item_tag_text">Team-Fotos</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">App design</p>
+                      <p class="service_item_tag_text">Porträt- &amp; Bewerbungsfotos</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Design system</p>
+                      <p class="service_item_tag_text">Office-Reportage</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">SAAS design</p>
+                      <p class="service_item_tag_text">Personal Branding</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Product Design</p>
+                      <p class="service_item_tag_text">Bildbearbeitung</p>
                     </div>
                   </div>
                 </div>
@@ -178,7 +183,7 @@
                   <video autoplay="" data-object-fit="cover" id="7e1f1754-24b2-b323-76e0-fef38d752562-video" loop="" muted="" playsinline="" poster="bilder/leistung-2.jpg" preload="none">
                     <source src="videos/leistung-2.webm" type="video/webm"/>
                   </video>
-                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d752562-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Pause video" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Play video" loading="lazy" src="icons/play.svg"/></span></button></div>
+                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d752562-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Video pausieren" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Video abspielen" loading="lazy" src="icons/play.svg"/></span></button></div>
                 </div>
               </div>
             </div>
@@ -186,27 +191,27 @@
           <div class="service_item">
             <div class="service_item_inner">
               <div class="service_item_content">
-                <h3 class="service_item_title" data-title-anim="">Web Development</h3>
+                <h3 class="service_item_title" data-title-anim="">Produkt- &amp; Food-Fotografie</h3>
                 <div class="service_item_tags_area">
-                  <p class="service_item_tags_subtitle">Services included:</p>
+                  <p class="service_item_tags_subtitle">Das gehört dazu:</p>
                   <div class="service_item_tags_wrapper">
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">WordPress</p>
+                      <p class="service_item_tag_text">Produktfotografie</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">HTML</p>
+                      <p class="service_item_tag_text">Food-Fotografie</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Webflow</p>
+                      <p class="service_item_tag_text">Stillleben</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Framer</p>
+                      <p class="service_item_tag_text">Packshots</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Shopify</p>
+                      <p class="service_item_tag_text">E-Commerce-Bilder</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Shopware</p>
+                      <p class="service_item_tag_text">Editorial-Aufnahmen</p>
                     </div>
                   </div>
                 </div>
@@ -216,7 +221,7 @@
                   <video autoplay="" data-object-fit="cover" id="7e1f1754-24b2-b323-76e0-fef38d75257f-video" loop="" muted="" playsinline="" poster="bilder/leistung-3.jpg" preload="none">
                     <source src="videos/leistung-3.webm" type="video/webm"/>
                   </video>
-                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d75257f-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Pause video" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Play video" loading="lazy" src="icons/play.svg"/></span></button></div>
+                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d75257f-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Video pausieren" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Video abspielen" loading="lazy" src="icons/play.svg"/></span></button></div>
                 </div>
               </div>
             </div>
@@ -224,27 +229,27 @@
           <div class="service_item">
             <div class="service_item_inner">
               <div class="service_item_content">
-                <h3 class="service_item_title" data-title-anim="">Digital Marketing</h3>
+                <h3 class="service_item_title" data-title-anim="">Event-Fotografie &amp; -Video</h3>
                 <div class="service_item_tags_area">
-                  <p class="service_item_tags_subtitle">Services included:</p>
+                  <p class="service_item_tags_subtitle">Das gehört dazu:</p>
                   <div class="service_item_tags_wrapper">
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">SEO</p>
+                      <p class="service_item_tag_text">Firmenevents</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Content writing</p>
+                      <p class="service_item_tag_text">Hochzeit</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Social Media</p>
+                      <p class="service_item_tag_text">Paar- &amp; Familienshooting</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Google Ads</p>
+                      <p class="service_item_tag_text">Sommerfeste</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Meta Ads</p>
+                      <p class="service_item_tag_text">Live-Mitschnitt</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Speed Optimization</p>
+                      <p class="service_item_tag_text">Aftermovie</p>
                     </div>
                   </div>
                 </div>
@@ -254,7 +259,7 @@
                   <video autoplay="" data-object-fit="cover" id="7e1f1754-24b2-b323-76e0-fef38d7525a1-video" loop="" muted="" playsinline="" poster="bilder/leistung-4.jpg" preload="none">
                     <source src="videos/leistung-4.webm" type="video/webm"/>
                   </video>
-                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d7525a1-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Pause video" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Play video" loading="lazy" src="icons/play.svg"/></span></button></div>
+                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d7525a1-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Video pausieren" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Video abspielen" loading="lazy" src="icons/play.svg"/></span></button></div>
                 </div>
               </div>
             </div>
@@ -262,12 +267,13 @@
         </div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Kundenstimmen – Texte hier ändern ===== -->
     <section class="testimonial_section w-variant-6810366c-2758-6af1-e2de-949ff57b34af">
       <div class="padding_global">
         <div class="container">
           <div class="section_header">
-            <h2 class="text-center" data-title-anim="">Clients Feedback</h2>
-            <div class="floating_text is-testimony" data-floating-badge="">5 Star Services</div>
+            <h2 class="text-center" data-title-anim="">Kundenstimmen</h2>
+            <div class="floating_text is-testimony" data-floating-badge="">Was Kund:innen sagen</div>
           </div>
           <div class="testimonial_cards" data-slide-cards="">
             <div class="testimonial_card" data-slide-card="" data-w-id="dddde0e5-8462-f20e-9113-b8873652cd58">
@@ -289,12 +295,12 @@
 </svg></div>
               </div>
               <div class="testimonial_content_area">
-                <p class="testimonial_text">A big thank you to the Brand Apart team for their excellent work on the Robert rebrand. We’re delighted to have you as an integral part of the process.</p>
+                <p class="testimonial_text">Die Social-Media-Reels für unser Café kamen bei den Gästen richtig gut an. Der Dreh war entspannt, die Ergebnisse kamen schnell und genau im Stil, den wir uns gewünscht hatten.</p>
                 <div class="testimonial_author_area">
-                  <div class="testimonial_author_image"><img alt="Man wearing glasses and a brown jacket against an orange circular background." class="image-cover" loading="lazy" src="bilder/kundenstimme-1.jpg"/></div>
+                  <div class="testimonial_author_image"><img alt="Porträtfoto von Laura M." class="image-cover" loading="lazy" src="bilder/kundenstimme-1.jpg"/></div>
                   <div class="testimonial_author_content">
-                    <p class="testimonial_author_name">Jerome Bell</p>
-                    <p class="testimonial_author_profession">Marketing Coordinator</p>
+                    <p class="testimonial_author_name">Laura M.</p>
+                    <p class="testimonial_author_profession">Café-Inhaberin</p>
                   </div>
                 </div>
               </div>
@@ -318,12 +324,12 @@
 </svg></div>
               </div>
               <div class="testimonial_content_area">
-                <p class="testimonial_text color-white">We’re incredibly grateful to the Brand Apart team for their best contribution to the Robert rebrand. Having you as part of the In Card team is truly valued. We’re excited for what’s ahead. We will work with them soon</p>
+                <p class="testimonial_text color-white">Der Imagefilm für unsere Tischlerei hat uns richtig überzeugt. Von der ersten Idee bis zum fertigen Schnitt hat alles gepasst – professionell, unkompliziert und mit echtem Gespür für unser Handwerk. Wir arbeiten sehr gern wieder mit ACVISUALS zusammen.</p>
                 <div class="testimonial_author_area">
-                  <div class="testimonial_author_image"><img alt="Smiling man with glasses and short curly hair wearing a black shirt against a red circular background." class="image-cover" loading="lazy" src="bilder/kundenstimme-2.jpg"/></div>
+                  <div class="testimonial_author_image"><img alt="Porträtfoto von Thomas K." class="image-cover" loading="lazy" src="bilder/kundenstimme-2.jpg"/></div>
                   <div class="testimonial_author_content">
-                    <p class="testimonial_author_name color-white">Luis Hamilton</p>
-                    <p class="testimonial_author_profession color-white">UI/UX Designer</p>
+                    <p class="testimonial_author_name color-white">Thomas K.</p>
+                    <p class="testimonial_author_profession color-white">Inhaber, Tischlerei</p>
                   </div>
                 </div>
               </div>
@@ -347,12 +353,12 @@
 </svg></div>
               </div>
               <div class="testimonial_content_area">
-                <p class="testimonial_text">This rebranding journey wouldn’t have been the same without the outstanding contribution of the Brand Apart team. Your strategic thinking</p>
+                <p class="testimonial_text">Die Produktfotos für unseren Onlineshop sehen jetzt endlich so aus, wie wir es uns immer gewünscht hatten. Klar, hochwertig und mit viel Liebe zum Detail.</p>
                 <div class="testimonial_author_area">
-                  <div class="testimonial_author_image"><img alt="Man with curly hair wearing sunglasses and a blue shirt against a teal background." class="image-cover" loading="lazy" src="bilder/kundenstimme-3.jpg"/></div>
+                  <div class="testimonial_author_image"><img alt="Porträtfoto von Nina R." class="image-cover" loading="lazy" src="bilder/kundenstimme-3.jpg"/></div>
                   <div class="testimonial_author_content">
-                    <p class="testimonial_author_name">Jenifer Catherin</p>
-                    <p class="testimonial_author_profession">Content Writer</p>
+                    <p class="testimonial_author_name">Nina R.</p>
+                    <p class="testimonial_author_profession">Gründerin, Naturkosmetik-Marke</p>
                   </div>
                 </div>
               </div>
@@ -376,12 +382,12 @@
 </svg></div>
               </div>
               <div class="testimonial_content_area">
-                <p class="testimonial_text color-white">We would like to extend our sincere appreciation to the Brand Apart team for their exceptional creativity and dedication throughout the rebranding process. Your expertise played a key role</p>
+                <p class="testimonial_text color-white">Wir möchten uns herzlich für die Business-Porträts unseres gesamten Teams bedanken. Locker, professionell und richtig schöne Ergebnisse für Website und Social Media.</p>
                 <div class="testimonial_author_area">
-                  <div class="testimonial_author_image"><img alt="Smiling man with glasses and short curly hair wearing a black shirt against a red circular background." class="image-cover" loading="lazy" src="bilder/kundenstimme-2.jpg"/></div>
+                  <div class="testimonial_author_image"><img alt="Porträtfoto von Sabine H." class="image-cover" loading="lazy" src="bilder/kundenstimme-2.jpg"/></div>
                   <div class="testimonial_author_content">
-                    <p class="testimonial_author_name color-white">Daniel Danzo</p>
-                    <p class="testimonial_author_profession color-white">Video Editor</p>
+                    <p class="testimonial_author_name color-white">Sabine H.</p>
+                    <p class="testimonial_author_profession color-white">Personalleitung, Kanzlei</p>
                   </div>
                 </div>
               </div>
@@ -390,6 +396,7 @@
         </div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Kontakt-Aufruf (CTA) – Texte hier ändern ===== -->
     <section class="cta_section">
       <div class="cta_ticker_row">
         <h2 class="cta_ticker_text" data-stroke="no">Lass uns gemeinsam etwas Großes erschaffen</h2>
@@ -411,6 +418,7 @@
       <div class="border_line _4" data-bg="#000" id=""></div>
       <div class="border_line _5" data-bg="#000" id=""></div>
     </div>
+    <!-- ===== ABSCHNITT: Fußzeile (auf allen Seiten gleich) ===== -->
     <footer class="footer">
       <div class="padding_global">
         <div class="container">

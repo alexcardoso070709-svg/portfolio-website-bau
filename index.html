@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="css/vorlage.css">
 <link rel="stylesheet" href="css/lenis.css">
 <link rel="stylesheet" href="css/eigene.css">
+<link rel="stylesheet" href="css/seiten.css">
 <script src="js/js-check.js"></script>
 <script defer src="js/vendor/gsap.min.js"></script>
 <script defer src="js/vendor/ScrollTrigger.min.js"></script>
@@ -31,7 +32,9 @@
 <script defer src="js/main.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
   <div class="page_wrapper">
+    <!-- ===== ABSCHNITT: Ladebildschirm (erscheint kurz beim Öffnen der Seite) ===== -->
     <div class="preloader">
       <div class="logo_text" data-preloader-logo="">//ACVISUALS</div>
       <div class="preloader_border">
@@ -44,6 +47,7 @@
         </div>
       </div>
     </div>
+    <!-- ===== ABSCHNITT: Kopfzeile & Menü (auf allen Seiten gleich – Änderungen hier auch auf den anderen Seiten machen) ===== -->
     <div class="navigation w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" id="main-nav" role="banner">
       <div class="navigation_wrapper"><a aria-current="page" class="brand w-nav-brand w--current" href="index.html"><p class="logo_text">// ACVISUALS</p></a>
         <nav class="nav_menu w-nav-menu" role="navigation">
@@ -82,15 +86,17 @@
         </div>
       </div>
     </div>
-    <section class="hero_section">
+    <!-- ===== ABSCHNITT: Startbild (großer Titel, Untertitel, kurzer Text, Zahl unten rechts) – Texte hier ändern.
+         Das große Hintergrundbild wird im CSS gesetzt (Klasse „hero_image“). ===== -->
+    <section class="hero_section" id="inhalt">
       <div class="hero_heading">
-        <h1 data-hero-title="">ARIYANA STUDIO</h1>
+        <h1 data-hero-title="">AC VISUALS</h1>
       </div>
       <div class="hero_wrapper">
         <div class="container">
           <div class="hero_content_wrapper">
-            <h2 class="hero_sub_title" data-hero-subtitle="">Design-first Digital Agency</h2>
-            <p class="hero_info" data-hero-text="">A multi-awarded digital studio crafting immersive &amp; interactive experiences for global brands since 2006.</p>
+            <h2 class="hero_sub_title" data-hero-subtitle="">Echte Momente, starke Bilder</h2>
+            <p class="hero_info" data-hero-text="">Foto- &amp; Videografie für Unternehmen und Privatkunden: Imagefilme, Porträts, Events und Hochzeiten mit Gefühl.</p>
           </div>
           <div class="hero_proof_area">
             <div class="hero_social_links">
@@ -114,8 +120,8 @@
 <path d="M0 55.7143H6.28571V62H0V55.7143Z" fill="white"></path>
 </svg></div>
               <div class="hero_stat_content">
-                <p class="hero_stat_title">$200M+</p>
-                <p class="hero_stat_info">Raised by Clients</p>
+                <p class="hero_stat_title">50+</p>
+                <p class="hero_stat_info">Projekte umgesetzt</p>
               </div>
             </div>
           </div>
@@ -123,6 +129,8 @@
         </div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Über uns (Kurzvorstellung) + Zeitleiste mit Jahreszahlen – Texte hier ändern.
+         Jede Station besteht aus: Etikett (floating_text), Jahreszahl (year_text), Text (year_info_text) und Bild. ===== -->
     <section class="about_section">
       <div class="padding_global">
         <div class="container">
@@ -130,11 +138,11 @@
             <div class="about_left_area">
               <div class="section_caption">
                 <div class="section_caption_circle"></div>
-                <p class="section_caption_text">Inside <span class="text-italic">(the)</span> Ariyana</p>
+                <p class="section_caption_text">Hinter <span class="text-italic">(den)</span> Kulissen</p>
               </div>
-              <h2 class="heading_style_h4 about_section_title" data-text-reveal="">ARIYANA IS A GLOBAL CREATIVE STUDIO, MAKING EVERYTHING THAT HAPPENS ON A DIGITAL SCREEN </h2><a class="button_primary w-inline-block" data-button-primary="" data-w-id="38728d2c-eb7f-cf2b-61d3-59d872520a83" href="ueber-uns.html" target=""><div class="button_line_mask_wrapper"><div class="button_line_mask" data-button-line-mask=""></div><div class="button_line_mask _2" data-button-line-mask=""></div><div class="button_line_mask _3" data-button-line-mask=""></div></div><div class="button_line" data-button-line=""></div><div class="button_text_wrapper"><p class="button_text" data-button-text="">Mehr erfahren</p><p class="button_text second_text" data-button-text="">Mehr erfahren</p></div></a>
+              <h2 class="heading_style_h4 about_section_title" data-text-reveal="">ACVISUALS HÄLT MIT FOTO UND VIDEO FEST, WAS UNTERNEHMEN UND MENSCHEN WIRKLICH AUSMACHT</h2><a class="button_primary w-inline-block" data-button-primary="" data-w-id="38728d2c-eb7f-cf2b-61d3-59d872520a83" href="ueber-uns.html" target=""><div class="button_line_mask_wrapper"><div class="button_line_mask" data-button-line-mask=""></div><div class="button_line_mask _2" data-button-line-mask=""></div><div class="button_line_mask _3" data-button-line-mask=""></div></div><div class="button_line" data-button-line=""></div><div class="button_text_wrapper"><p class="button_text" data-button-text="">Mehr erfahren</p><p class="button_text second_text" data-button-text="">Mehr erfahren</p></div></a>
             </div>
-            <div class="about_section_pattern"><img alt="Abstract geometric design featuring white, red, and orange rounded shapes arranged symmetrically." class="image-cover" loading="lazy" src="bilder/inside-grafik.png"/></div>
+            <div class="about_section_pattern"><img alt="" class="image-cover" loading="lazy" src="bilder/inside-grafik.png"/></div>
           </div>
         </div>
       </div>
@@ -144,74 +152,74 @@
             <div class="year_wrapper">
               <div class="year_item">
                 <div class="year_text_wrapper">
-                  <div class="floating_text is-about" data-bg="#FF8F64">uk office</div>
+                  <div class="floating_text is-about" data-bg="#FF8F64">Erste Kamera</div>
                   <h2 class="year_text">2020</h2>
                   <div class="year_text_line"></div>
                 </div>
                 <div class="year_content">
                   <div class="year_divider"></div>
-                  <p class="year_info_text">We officially opened UK office, laying foundation for our international operations and enabling us to work closely with global clients while delivering high-quality digital solutions.</p>
+                  <p class="year_info_text">Mit der ersten eigenen Kamera fing alles an: Porträts von Freunden, Streifzüge durch die Stadt und viele lange Abende, um Licht, Schnitt und Bildsprache zu lernen.</p>
                   <div class="year_image"><img alt="" class="image-cover" loading="lazy" src="bilder/jahr-1.jpg"/></div>
                 </div>
               </div>
               <div class="year_item">
                 <div class="year_text_wrapper">
-                  <div class="floating_text is-about" data-bg="#DCA8FF">NEW TEAM</div>
+                  <div class="floating_text is-about" data-bg="#DCA8FF">ERSTE HOCHZEIT</div>
                   <h2 class="year_text">2021</h2>
                   <div class="year_text_line"></div>
                 </div>
                 <div class="year_content">
                   <div class="year_divider"></div>
-                  <p class="year_info_text">We focused on forming a strong and reliable team of designers, developers, and digital specialists. This dedicated team allowe us to improve, increase delivery speed</p>
-                  <div class="year_image"><img alt="Purple booklet with metallic logo and text reading 'Kearney Group' and 'From transactional to transformational' on a ribbed purple and white surface." class="image-cover" loading="lazy" src="bilder/projekt-7.jpg"/></div>
+                  <p class="year_info_text">Die erste Hochzeit, die wir begleiten durften: aufregend und prägend. Seitdem wissen wir, wie viel ruhige Hände, ein gutes Auge und echte Nähe ausmachen.</p>
+                  <div class="year_image"><img alt="Brautpaar bei einer Hochzeit am See" class="image-cover" loading="lazy" src="bilder/projekt-1.jpg"/></div>
                 </div>
               </div>
               <div class="year_item">
                 <div class="year_text_wrapper">
-                  <div class="floating_text is-about" data-bg="#B7FF93">GLOBAL CLIENTS</div>
+                  <div class="floating_text is-about" data-bg="#B7FF93">GEWERBESTART</div>
                   <h2 class="year_text">2022</h2>
                   <div class="year_text_line"></div>
                 </div>
                 <div class="year_content">
                   <div class="year_divider"></div>
-                  <p class="year_info_text">We expanded our reach and began working with clients across multiple countries. Global exposure of our expertise and allowed us to deliver diverse, high-quality digital solutions worldwide.</p>
-                  <div class="year_image"><img alt="Abstract 3D design featuring intertwined orange and red ribbon-like shapes on a white textured background." class="image-cover" loading="lazy" src="bilder/projekt-8.jpg"/></div>
+                  <p class="year_info_text">Aus der Leidenschaft wurde ein Beruf: Wir haben ACVISUALS offiziell als Gewerbe angemeldet und unser Angebot für Foto und Video klar aufgestellt – für Firmen und Privatkunden.</p>
+                  <div class="year_image"><img alt="Gäste feiern bei einem Sommerfest" class="image-cover" loading="lazy" src="bilder/projekt-5.jpg"/></div>
                 </div>
               </div>
               <div class="year_item">
                 <div class="year_text_wrapper">
-                  <div class="floating_text is-about" data-bg="#F8A7FF">ONLINE GROWTH</div>
+                  <div class="floating_text is-about" data-bg="#F8A7FF">FIRMENKUNDEN</div>
                   <h2 class="year_text">2023</h2>
                   <div class="year_text_line"></div>
                 </div>
                 <div class="year_content">
                   <div class="year_divider"></div>
-                  <p class="year_info_text">We experienced strong online growth by expanding our digital presence, increasing the opportunities, and reaching a wider audience through strategic branding and performance-driven  channels.</p>
-                  <div class="year_image"><img alt="about year card image" class="image-cover" loading="lazy" src="bilder/projekt-9.jpg"/></div>
+                  <p class="year_info_text">Die ersten Unternehmen buchten uns für Produktfotos und Business-Porträts. Dabei haben wir gelernt, wie man Marken ins richtige Licht rückt – ehrlich, klar und nahbar.</p>
+                  <div class="year_image"><img alt="Produktfoto von Naturkosmetik-Fläschchen" class="image-cover" loading="lazy" src="bilder/projekt-3.jpg"/></div>
                 </div>
               </div>
               <div class="year_item">
                 <div class="year_text_wrapper">
-                  <div class="floating_text is-about" data-bg="#FFD37A">CREATIVE HUB</div>
+                  <div class="floating_text is-about" data-bg="#FFD37A">IMAGEFILME</div>
                   <h2 class="year_text">2024</h2>
                   <div class="year_text_line"></div>
                 </div>
                 <div class="year_content">
                   <div class="year_divider"></div>
-                  <p class="year_info_text">We evolved into a full-scale creative hub, bringing together design, development, strategic thinking to deliver innovative, collaborative, and future-ready digital solutions.</p>
-                  <div class="year_image"><img alt="about year card image" class="image-cover" loading="lazy" src="bilder/projekt-10.jpg"/></div>
+                  <p class="year_info_text">Wir haben den Bereich Video ausgebaut: Imagefilme und Recruiting-Videos für regionale Betriebe – vom ersten Konzept über den Dreh bis zum fertigen Schnitt.</p>
+                  <div class="year_image"><img alt="Dreh eines Imagefilms in einer Tischlerei" class="image-cover" loading="lazy" src="bilder/projekt-2.jpg"/></div>
                 </div>
               </div>
               <div class="year_item">
                 <div class="year_text_wrapper">
-                  <div class="floating_text is-about" data-bg="#FFA5A6">NEW VISION</div>
+                  <div class="floating_text is-about" data-bg="#FFA5A6">SOCIAL MEDIA</div>
                   <h2 class="year_text">2025</h2>
                   <div class="year_text_line"></div>
                 </div>
                 <div class="year_content">
                   <div class="year_divider"></div>
-                  <p class="year_info_text">We defined clear new vision focused on innovation, creativity, and long-term impact—guiding how we design, build, and scale meaningful the best digital experiences for users.</p>
-                  <div class="year_image"><img alt="about year card image" class="image-cover" loading="lazy" src="bilder/projekt-11.jpg"/></div>
+                  <p class="year_info_text">Reels, Events und Content-Tage: Heute begleiten wir Unternehmen und Privatkunden mit Foto und Video – überall dort, wo gute Geschichten erzählt werden wollen.</p>
+                  <div class="year_image"><img alt="Dreh von Social-Media-Clips in einem Café" class="image-cover" loading="lazy" src="bilder/projekt-6.jpg"/></div>
                 </div>
               </div>
             </div>
@@ -219,12 +227,13 @@
         </div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Ablauf in 4 Schritten – Texte hier ändern ===== -->
     <section class="step_section">
       <div class="padding_global">
         <div class="container">
           <div class="section_header is_step">
-            <h2 class="heading_style_h4 step_section_title" data-title-anim="">ASSESS, DEPLOY, AND OPERATE</h2>
-            <p class="step_section_info" data-text-anim="">We’re with you all the way from the pilot to beyond.</p>
+            <h2 class="heading_style_h4 step_section_title" data-title-anim="">ANFRAGEN, DREHEN, LIEFERN</h2>
+            <p class="step_section_info" data-text-anim="">Wir begleiten dich von der ersten Idee bis zum fertigen Ergebnis.</p>
           </div>
           <div class="steps_wrapper">
             <div class="steps_line"></div>
@@ -233,13 +242,13 @@
 <path d="M6.33333 31.6686L0 11.6686L15.8333 0.00195312L31.6667 11.6686L25.3333 31.6686H6.33333Z" fill="currentColor"></path>
 </svg></div>
               <div class="step_item_inner">
-                <p class="step_count">Step 01</p>
+                <p class="step_count">Schritt 01</p>
                 <div class="step_title_wrapper">
-                  <h3 class="step_title">COLLECT BRIEF</h3>
-                  <h3 class="step_title is_gradiant">COLLECT BRIEF</h3>
+                  <h3 class="step_title">ANFRAGE</h3>
+                  <h3 class="step_title is_gradiant">ANFRAGE</h3>
                 </div>
                 <div class="step_item_info_wrap">
-                  <p class="step_info">We gather all essential project information, including goals, target, features etc</p>
+                  <p class="step_info">Du schickst uns deine Wünsche, Termine und Ideen – wir klären vorab alles Wichtige.</p>
                 </div>
                 <div class="step_icon" data-w-id="cc29a486-5c0f-3288-0ee8-c33654a5e5d1">
                   <div class="step_icon_code_embed w-embed"><svg fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
@@ -253,13 +262,13 @@
 <path d="M6.33333 31.6686L0 11.6686L15.8333 0.00195312L31.6667 11.6686L25.3333 31.6686H6.33333Z" fill="currentColor"></path>
 </svg></div>
               <div class="step_item_inner">
-                <p class="step_count">Step 02</p>
+                <p class="step_count">Schritt 02</p>
                 <div class="step_title_wrapper">
-                  <h3 class="step_title">WIREFRAME</h3>
-                  <h3 class="step_title is_gradiant">WIREFRAME</h3>
+                  <h3 class="step_title">KONZEPT</h3>
+                  <h3 class="step_title is_gradiant">KONZEPT</h3>
                 </div>
                 <div class="step_item_info_wrap">
-                  <p class="step_info">Low-fidelity layouts that define structure, page flow, users details before design begins</p>
+                  <p class="step_info">Wir planen Ablauf, Location und Bildsprache, damit am Drehtag alles reibungslos läuft.</p>
                 </div>
                 <div class="step_icon" data-w-id="cc29a486-5c0f-3288-0ee8-c33654a5e5d1">
                   <div class="step_icon_code_embed w-embed"><svg fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
@@ -273,13 +282,13 @@
 <path d="M6.33333 31.6686L0 11.6686L15.8333 0.00195312L31.6667 11.6686L25.3333 31.6686H6.33333Z" fill="currentColor"></path>
 </svg></div>
               <div class="step_item_inner">
-                <p class="step_count">Step 03</p>
+                <p class="step_count">Schritt 03</p>
                 <div class="step_title_wrapper">
-                  <h3 class="step_title">UI DESIGN</h3>
-                  <h3 class="step_title is_gradiant">UI DESIGN</h3>
+                  <h3 class="step_title">DREHTAG</h3>
+                  <h3 class="step_title is_gradiant">DREHTAG</h3>
                 </div>
                 <div class="step_item_info_wrap">
-                  <p class="step_info">Craft visually polished interfaces that reflect the brand’s identity, ensuring clarity, consistency</p>
+                  <p class="step_info">Fotoshooting oder Dreh vor Ort – entspannt, professionell und mit Blick fürs Detail.</p>
                 </div>
                 <div class="step_icon" data-w-id="cc29a486-5c0f-3288-0ee8-c33654a5e5d1">
                   <div class="step_icon_code_embed w-embed"><svg fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
@@ -293,13 +302,13 @@
 <path d="M6.33333 31.6686L0 11.6686L15.8333 0.00195312L31.6667 11.6686L25.3333 31.6686H6.33333Z" fill="currentColor"></path>
 </svg></div>
               <div class="step_item_inner">
-                <p class="step_count">Step 04</p>
+                <p class="step_count">Schritt 04</p>
                 <div class="step_title_wrapper">
-                  <h3 class="step_title">DELIVER DESIGN</h3>
-                  <h3 class="step_title is_gradiant">DELIVER DESIGN</h3>
+                  <h3 class="step_title">ÜBERGABE</h3>
+                  <h3 class="step_title is_gradiant">ÜBERGABE</h3>
                 </div>
                 <div class="step_item_info_wrap">
-                  <p class="step_info">Finalize and package all approved design assets with organization &amp; clear guidelines.</p>
+                  <p class="step_info">Du bekommst deine bearbeiteten Fotos und Videos in hoher Qualität zum Download.</p>
                 </div>
                 <div class="step_icon" data-w-id="cc29a486-5c0f-3288-0ee8-c33654a5e5d1">
                   <div class="step_icon_code_embed w-embed"><svg fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
@@ -312,23 +321,24 @@
         </div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Ausgewählte Projekte (Bildkarten) – Texte hier ändern ===== -->
     <section class="work_section">
       <div class="padding_global">
         <div class="container">
           <div class="section_header is_work">
-            <h2 class="work_section_title" data-title-anim="">FEATURED WORKS</h2>
-            <div class="floating_text is-work" data-floating-badge="">DIGITAL SCREENS</div>
+            <h2 class="work_section_title" data-title-anim="">UNSERE PROJEKTE</h2>
+            <div class="floating_text is-work" data-floating-badge="">FOTO &amp; VIDEO</div>
           </div>
           <div class="work_items_track">
             <div class="work_items_wrapper">
               <div class="work_collection_list_wrapper w-dyn-list" data-work-item="">
                 <div class="w-dyn-items" role="list">
                   <div class="work_item w-dyn-item" data-bg="#ab9bff" role="listitem">
-                    <div class="work_left_content"><a aria-label="work link" class="work_link w-inline-block" href="projekt-5.html"><h3 class="heading_style_h4 work_title">Drink Different Web Design WITH WP</h3></a>
-                      <p class="work_description_text">Drink Different Web Design with WP delivers bold, refreshing WordPress sites featuring custom layouts, vibrant visuals, smooth interactions, and a playful brand style experience.</p><a class="button_primary v2 w-inline-block" data-button-primary-v2="" href="projekt-5.html"><div class="button_line_mask_wrapper"><div class="button_line_mask_v2" data-button-line-mask-v2=""></div><span class="button_line_mask_v2 _2" data-button-line-mask-v2=""></span><div class="button_line_mask_v2 _3" data-button-line-mask-v2=""></div></div><div class="button_line" data-button-line-v2=""></div><div class="button_text_wrapper"><p class="button_text_v2" data-button-text-v2="">Mehr erfahren</p><p class="button_text_v2 second_text" data-button-text-v2="">Mehr erfahren</p></div></a>
+                    <div class="work_left_content"><a aria-label="Projekt ansehen" class="work_link w-inline-block" href="projekt-1.html"><h3 class="heading_style_h4 work_title">Hochzeit am See</h3></a>
+                      <p class="work_description_text">Eine entspannte Trauung direkt am Wasser: natürliche Portraits, stimmungsvolles Licht am Abend und ehrliche Momente zwischen Brautpaar, Familie und Gästen.</p><a class="button_primary v2 w-inline-block" data-button-primary-v2="" href="projekt-1.html"><div class="button_line_mask_wrapper"><div class="button_line_mask_v2" data-button-line-mask-v2=""></div><span class="button_line_mask_v2 _2" data-button-line-mask-v2=""></span><div class="button_line_mask_v2 _3" data-button-line-mask-v2=""></div></div><div class="button_line" data-button-line-v2=""></div><div class="button_text_wrapper"><p class="button_text_v2" data-button-text-v2="">Mehr erfahren</p><p class="button_text_v2 second_text" data-button-text-v2="">Mehr erfahren</p></div></a>
                     </div>
                     <div class="work_right_content" data-bg="#8673ee">
-                      <div class="work_image_visual"><img alt="Drink Different Web Design with WP delivers bold, refreshing WordPress sites featuring custom layouts, vibrant visuals, smooth interactions, and a playful brand style experience." class="image-cover" loading="lazy" src="bilder/projekt-5.jpg"/></div>
+                      <div class="work_image_visual"><img alt="Brautpaar tanzt am Seeufer bei der Hochzeitsfeier" class="image-cover" loading="lazy" src="bilder/projekt-1.jpg"/></div>
                     </div>
                   </div>
                 </div>
@@ -336,11 +346,11 @@
               <div class="work_collection_list_wrapper _2 w-dyn-list" data-work-item="">
                 <div class="w-dyn-items" role="list">
                   <div class="work_item _2 w-dyn-item" data-bg="#ff905f" role="listitem">
-                    <div class="work_left_content"><a aria-label="work link" class="work_link w-inline-block" href="projekt-3.html"><h3 class="heading_style_h4 work_title">Push Past Pack Design in New Style</h3></a>
-                      <p class="work_description_text">Push Past Pack Design in New Style delivers bold, modern packaging concepts that redefine visuals, elevate branding, and introduce fresh creative energy.</p><a class="button_primary v2 w-inline-block" data-button-primary-v2="" href="projekt-3.html"><div class="button_line_mask_wrapper"><div class="button_line_mask_v2" data-button-line-mask-v2=""></div><span class="button_line_mask_v2 _2" data-button-line-mask-v2=""></span><div class="button_line_mask_v2 _3" data-button-line-mask-v2=""></div></div><div class="button_line" data-button-line-v2=""></div><div class="button_text_wrapper"><p class="button_text_v2" data-button-text-v2="">Mehr erfahren</p><p class="button_text_v2 second_text" data-button-text-v2="">Mehr erfahren</p></div></a>
+                    <div class="work_left_content"><a aria-label="Projekt ansehen" class="work_link w-inline-block" href="projekt-2.html"><h3 class="heading_style_h4 work_title">Imagefilm Tischlerei Holzwerk</h3></a>
+                      <p class="work_description_text">Ein Imagefilm für eine regionale Tischlerei: Werkstattaufnahmen, Interviews mit dem Team und Drohnenbilder zeigen Handwerk, Maschinen und die Menschen dahinter.</p><a class="button_primary v2 w-inline-block" data-button-primary-v2="" href="projekt-2.html"><div class="button_line_mask_wrapper"><div class="button_line_mask_v2" data-button-line-mask-v2=""></div><span class="button_line_mask_v2 _2" data-button-line-mask-v2=""></span><div class="button_line_mask_v2 _3" data-button-line-mask-v2=""></div></div><div class="button_line" data-button-line-v2=""></div><div class="button_text_wrapper"><p class="button_text_v2" data-button-text-v2="">Mehr erfahren</p><p class="button_text_v2 second_text" data-button-text-v2="">Mehr erfahren</p></div></a>
                     </div>
                     <div class="work_right_content" data-bg="#ff7d44">
-                      <div class="work_image_visual"><img alt="Push Past Pack Design in New Style delivers bold, modern packaging concepts that redefine visuals, elevate branding, and introduce fresh creative energy." class="image-cover" loading="lazy" src="bilder/projekt-3.jpg"/></div>
+                      <div class="work_image_visual"><img alt="Tischler bei der Arbeit in der Werkstatt für den Imagefilm" class="image-cover" loading="lazy" src="bilder/projekt-2.jpg"/></div>
                     </div>
                   </div>
                 </div>
@@ -348,11 +358,11 @@
               <div class="work_collection_list_wrapper _3 w-dyn-list" data-work-item="">
                 <div class="w-dyn-items" role="list">
                   <div class="work_item _3 w-dyn-item" data-bg="#ff767a" role="listitem">
-                    <div class="work_left_content"><a aria-label="work link" class="work_link w-inline-block" href="projekt-6.html"><h3 class="heading_style_h4 work_title">Packaging Design with On-Demand Experts</h3></a>
-                      <p class="work_description_text">Packaging Design with On-Demand Experts delivers tailored, high-quality packaging solutions created by skilled specialists who craft standout visuals, smart layouts</p><a class="button_primary v2 w-inline-block" data-button-primary-v2="" href="projekt-6.html"><div class="button_line_mask_wrapper"><div class="button_line_mask_v2" data-button-line-mask-v2=""></div><span class="button_line_mask_v2 _2" data-button-line-mask-v2=""></span><div class="button_line_mask_v2 _3" data-button-line-mask-v2=""></div></div><div class="button_line" data-button-line-v2=""></div><div class="button_text_wrapper"><p class="button_text_v2" data-button-text-v2="">Mehr erfahren</p><p class="button_text_v2 second_text" data-button-text-v2="">Mehr erfahren</p></div></a>
+                    <div class="work_left_content"><a aria-label="Projekt ansehen" class="work_link w-inline-block" href="projekt-3.html"><h3 class="heading_style_h4 work_title">Produktfotos Naturkosmetik</h3></a>
+                      <p class="work_description_text">Produktfotografie für eine Naturkosmetik-Marke: klare Kompositionen, weiches Licht und Detailaufnahmen, die Textur und Qualität der Produkte zeigen.</p><a class="button_primary v2 w-inline-block" data-button-primary-v2="" href="projekt-3.html"><div class="button_line_mask_wrapper"><div class="button_line_mask_v2" data-button-line-mask-v2=""></div><span class="button_line_mask_v2 _2" data-button-line-mask-v2=""></span><div class="button_line_mask_v2 _3" data-button-line-mask-v2=""></div></div><div class="button_line" data-button-line-v2=""></div><div class="button_text_wrapper"><p class="button_text_v2" data-button-text-v2="">Mehr erfahren</p><p class="button_text_v2 second_text" data-button-text-v2="">Mehr erfahren</p></div></a>
                     </div>
                     <div class="work_right_content" data-bg="#ff5b60">
-                      <div class="work_image_visual"><img alt="Packaging Design with On-Demand Experts delivers tailored, high-quality packaging solutions created by skilled specialists who craft standout visuals, smart layouts" class="image-cover" loading="lazy" src="bilder/projekt-6.jpg"/></div>
+                      <div class="work_image_visual"><img alt="Naturkosmetik-Produkte in Szene gesetzt für den Online-Shop" class="image-cover" loading="lazy" src="bilder/projekt-3.jpg"/></div>
                     </div>
                   </div>
                 </div>
@@ -360,11 +370,11 @@
               <div class="work_collection_list_wrapper _4 w-dyn-list" data-work-item="">
                 <div class="w-dyn-items" role="list">
                   <div class="work_item _4 w-dyn-item" data-bg="#b8c56f" role="listitem">
-                    <div class="work_left_content"><a aria-label="work link" class="work_link w-inline-block" href="projekt-2.html"><h3 class="heading_style_h4 work_title">Plenova Web Design &amp; Development</h3></a>
-                      <p class="work_description_text">Plenova Web Design &amp; Development builds modern, high-performing websites with clean UX, custom features, responsive layouts, and seamless functionality crafted to elevate brands</p><a class="button_primary v2 w-inline-block" data-button-primary-v2="" href="projekt-2.html"><div class="button_line_mask_wrapper"><div class="button_line_mask_v2" data-button-line-mask-v2=""></div><span class="button_line_mask_v2 _2" data-button-line-mask-v2=""></span><div class="button_line_mask_v2 _3" data-button-line-mask-v2=""></div></div><div class="button_line" data-button-line-v2=""></div><div class="button_text_wrapper"><p class="button_text_v2" data-button-text-v2="">Mehr erfahren</p><p class="button_text_v2 second_text" data-button-text-v2="">Mehr erfahren</p></div></a>
+                    <div class="work_left_content"><a aria-label="Projekt ansehen" class="work_link w-inline-block" href="projekt-4.html"><h3 class="heading_style_h4 work_title">Business-Porträts Kanzlei</h3></a>
+                      <p class="work_description_text">Business-Porträts für eine Kanzlei: einheitlicher Look für Website und Social Media, entspannte Atmosphäre im Shooting und Ergebnisse, die professionell und nahbar wirken.</p><a class="button_primary v2 w-inline-block" data-button-primary-v2="" href="projekt-4.html"><div class="button_line_mask_wrapper"><div class="button_line_mask_v2" data-button-line-mask-v2=""></div><span class="button_line_mask_v2 _2" data-button-line-mask-v2=""></span><div class="button_line_mask_v2 _3" data-button-line-mask-v2=""></div></div><div class="button_line" data-button-line-v2=""></div><div class="button_text_wrapper"><p class="button_text_v2" data-button-text-v2="">Mehr erfahren</p><p class="button_text_v2 second_text" data-button-text-v2="">Mehr erfahren</p></div></a>
                     </div>
                     <div class="work_right_content" data-bg="#9fae4b">
-                      <div class="work_image_visual"><img alt="Plenova Web Design &amp; Development builds modern, high-performing websites with clean UX, custom features, responsive layouts, and seamless functionality crafted to elevate brands" class="image-cover" loading="lazy" src="bilder/projekt-2.jpg"/></div>
+                      <div class="work_image_visual"><img alt="Anwältin und Anwalt bei Business-Porträts im Büro" class="image-cover" loading="lazy" src="bilder/projekt-4.jpg"/></div>
                     </div>
                   </div>
                 </div>
@@ -374,6 +384,7 @@
         </div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Laufband-Zitat & Kundenlogos – Texte hier ändern ===== -->
     <div class="brands_section">
       <div class="brands_wrapper">
         <div class="brands_grid">
@@ -623,7 +634,7 @@
         <div class="brands_grid absolute" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b51ec-2b3b50f7">
           <div class="brands_ticker" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b51ed-2b3b50f7">
             <div class="brands_ticker_row">
-              <p class="brands_ticker_text">novators</p>
+              <p class="brands_ticker_text">Momente</p>
               <div class="brands_ticker_icon w-embed"><svg fill="none" height="20" viewBox="0 0 17 20" width="17" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.5">
 <path d="M7.95238 0H10.0476V2.02765H7.95238V0Z" fill="white"></path>
@@ -638,7 +649,7 @@
 <path d="M0 17.9723H2.09524V20H0V17.9723Z" fill="white"></path>
 </g>
 </svg></div>
-              <p class="brands_ticker_text">Trusted by industry Innovators</p>
+              <p class="brands_ticker_text">Vertrauen von Unternehmen und Privatkunden</p>
               <div class="brands_ticker_icon w-embed"><svg fill="none" height="20" viewBox="0 0 17 20" width="17" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.5">
 <path d="M7.95238 0H10.0476V2.02765H7.95238V0Z" fill="white"></path>
@@ -653,7 +664,7 @@
 <path d="M0 17.9723H2.09524V20H0V17.9723Z" fill="white"></path>
 </g>
 </svg></div>
-              <p class="brands_ticker_text">Trusted</p>
+              <p class="brands_ticker_text">Qualität</p>
               <div class="brands_ticker_icon w-embed"><svg fill="none" height="20" viewBox="0 0 17 20" width="17" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.5">
 <path d="M7.95238 0H10.0476V2.02765H7.95238V0Z" fill="white"></path>
@@ -670,7 +681,7 @@
 </svg></div>
             </div>
             <div class="brands_ticker_row">
-              <p class="brands_ticker_text">novators</p>
+              <p class="brands_ticker_text">Momente</p>
               <div class="brands_ticker_icon w-embed"><svg fill="none" height="20" viewBox="0 0 17 20" width="17" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.5">
 <path d="M7.95238 0H10.0476V2.02765H7.95238V0Z" fill="white"></path>
@@ -685,7 +696,7 @@
 <path d="M0 17.9723H2.09524V20H0V17.9723Z" fill="white"></path>
 </g>
 </svg></div>
-              <p class="brands_ticker_text">Trusted by industry Innovators</p>
+              <p class="brands_ticker_text">Vertrauen von Unternehmen und Privatkunden</p>
               <div class="brands_ticker_icon w-embed"><svg fill="none" height="20" viewBox="0 0 17 20" width="17" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.5">
 <path d="M7.95238 0H10.0476V2.02765H7.95238V0Z" fill="white"></path>
@@ -700,7 +711,7 @@
 <path d="M0 17.9723H2.09524V20H0V17.9723Z" fill="white"></path>
 </g>
 </svg></div>
-              <p class="brands_ticker_text">Trusted</p>
+              <p class="brands_ticker_text">Qualität</p>
               <div class="brands_ticker_icon w-embed"><svg fill="none" height="20" viewBox="0 0 17 20" width="17" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.5">
 <path d="M7.95238 0H10.0476V2.02765H7.95238V0Z" fill="white"></path>
@@ -718,52 +729,53 @@
             </div>
           </div>
           <div class="brands_testimony_area" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b5202-2b3b50f7">
-            <p class="brands_testimony_text" data-text-anim="">“They were quick to support, easy to work with, and fully dedicated to launching our site on time in budget.”</p>
+            <p class="brands_testimony_text" data-text-anim="">„Schnell, unkompliziert und mit einem tollen Auge fürs Detail – unser Imagefilm war pünktlich fertig und hat unsere Erwartungen übertroffen.“</p>
             <div class="brands_testimony_author_content">
-              <p class="brands_testimony_author_name">Robert Kenedy</p>
-              <p class="brands_testimony_author_designation">Head of growth @ Walton</p>
+              <p class="brands_testimony_author_name">Markus B.</p>
+              <p class="brands_testimony_author_designation">Geschäftsführer, Tischlerei</p>
             </div>
           </div>
-          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b520a-2b3b50f7"><img alt="brand logo" class="brand_logo" loading="lazy" src="icons/kunde-1.svg"/></div>
-          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b520c-2b3b50f7"><img alt="brand logo" class="brand_logo" loading="lazy" src="icons/kunde-2.svg"/></div>
-          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b520e-2b3b50f7"><img alt="brand logo" class="brand_logo" loading="lazy" src="icons/kunde-3.svg"/></div>
-          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b5210-2b3b50f7"><img alt="brand logo" class="brand_logo" loading="lazy" src="icons/kunde-4.svg"/></div>
-          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b5212-2b3b50f7"><img alt="brand logo" class="brand_logo" loading="lazy" src="icons/kunde-4.svg"/></div>
-          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b5214-2b3b50f7"><img alt="brand logo" class="brand_logo" loading="lazy" src="icons/kunde-6.svg"/></div>
+          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b520a-2b3b50f7"><img alt="Kundenlogo" class="brand_logo" loading="lazy" src="icons/kunde-1.svg"/></div>
+          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b520c-2b3b50f7"><img alt="Kundenlogo" class="brand_logo" loading="lazy" src="icons/kunde-2.svg"/></div>
+          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b520e-2b3b50f7"><img alt="Kundenlogo" class="brand_logo" loading="lazy" src="icons/kunde-3.svg"/></div>
+          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b5210-2b3b50f7"><img alt="Kundenlogo" class="brand_logo" loading="lazy" src="icons/kunde-4.svg"/></div>
+          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b5212-2b3b50f7"><img alt="Kundenlogo" class="brand_logo" loading="lazy" src="icons/kunde-4.svg"/></div>
+          <div class="brand_logo_wrapper" id="w-node-_1def5633-bbe5-f8fb-0cf8-29d12b3b5214-2b3b50f7"><img alt="Kundenlogo" class="brand_logo" loading="lazy" src="icons/kunde-6.svg"/></div>
         </div>
       </div>
     </div>
+    <!-- ===== ABSCHNITT: Leistungen im Überblick (4 Kacheln mit Video) – Texte hier ändern ===== -->
     <section class="service_section">
       <div class="padding_global">
         <div class="container">
           <div class="section_header is_service">
-            <h2 class="service_section_title" data-title-anim="">Expert SOLUTIONS</h2>
-            <div class="floating_text is_service" data-floating-badge="">5 STAR SERVICES</div>
+            <h2 class="service_section_title" data-title-anim="">Unsere STÄRKEN</h2>
+            <div class="floating_text is_service" data-floating-badge="">MIT LEIDENSCHAFT</div>
           </div>
           <div class="service_item">
             <div class="service_item_inner">
               <div class="service_item_content">
-                <h3 class="service_item_title" data-title-anim="">GRAPHICS DESIGN</h3>
+                <h3 class="service_item_title" data-title-anim="">IMAGEFILM &amp; VIDEO</h3>
                 <div class="service_item_tags_area">
-                  <p class="service_item_tags_subtitle">Services included:</p>
+                  <p class="service_item_tags_subtitle">Das gehört dazu:</p>
                   <div class="service_item_tags_wrapper">
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Banner Design</p>
+                      <p class="service_item_tag_text">Imagefilm</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Branding</p>
+                      <p class="service_item_tag_text">Recruiting-Video</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Illustration</p>
+                      <p class="service_item_tag_text">Social-Media-Clips</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Logo Design</p>
+                      <p class="service_item_tag_text">Konzept &amp; Drehbuch</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Poster Design</p>
+                      <p class="service_item_tag_text">Schnitt &amp; Farbe</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Packaging</p>
+                      <p class="service_item_tag_text">Kamera &amp; Ton</p>
                     </div>
                   </div>
                 </div>
@@ -773,7 +785,7 @@
                   <video autoplay="" data-object-fit="cover" id="7e1f1754-24b2-b323-76e0-fef38d752545-video" loop="" muted="" playsinline="" poster="bilder/leistung-1.jpg" preload="none">
                     <source src="videos/leistung-1.webm" type="video/webm"/>
                   </video>
-                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d752545-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Pause video" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Play video" loading="lazy" src="icons/play.svg"/></span></button></div>
+                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d752545-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Video pausieren" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Video abspielen" loading="lazy" src="icons/play.svg"/></span></button></div>
                 </div>
               </div>
             </div>
@@ -781,27 +793,27 @@
           <div class="service_item">
             <div class="service_item_inner">
               <div class="service_item_content">
-                <h3 class="service_item_title" data-title-anim="">UIUX Design</h3>
+                <h3 class="service_item_title" data-title-anim="">BUSINESS-FOTOGRAFIE</h3>
                 <div class="service_item_tags_area">
-                  <p class="service_item_tags_subtitle">Services included:</p>
+                  <p class="service_item_tags_subtitle">Das gehört dazu:</p>
                   <div class="service_item_tags_wrapper">
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">user interface</p>
+                      <p class="service_item_tag_text">Business-Porträts</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">User Experience</p>
+                      <p class="service_item_tag_text">Team-Fotos</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">App design</p>
+                      <p class="service_item_tag_text">Bewerbungsfotos</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Design system</p>
+                      <p class="service_item_tag_text">Office-Reportage</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">SAAS design</p>
+                      <p class="service_item_tag_text">Personal Branding</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Product Design</p>
+                      <p class="service_item_tag_text">Bildbearbeitung</p>
                     </div>
                   </div>
                 </div>
@@ -811,7 +823,7 @@
                   <video autoplay="" data-object-fit="cover" id="7e1f1754-24b2-b323-76e0-fef38d752562-video" loop="" muted="" playsinline="" poster="bilder/leistung-2.jpg" preload="none">
                     <source src="videos/leistung-2.webm" type="video/webm"/>
                   </video>
-                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d752562-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Pause video" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Play video" loading="lazy" src="icons/play.svg"/></span></button></div>
+                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d752562-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Video pausieren" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Video abspielen" loading="lazy" src="icons/play.svg"/></span></button></div>
                 </div>
               </div>
             </div>
@@ -819,27 +831,27 @@
           <div class="service_item">
             <div class="service_item_inner">
               <div class="service_item_content">
-                <h3 class="service_item_title" data-title-anim="">Web Development</h3>
+                <h3 class="service_item_title" data-title-anim="">EVENT-FOTO &amp; -VIDEO</h3>
                 <div class="service_item_tags_area">
-                  <p class="service_item_tags_subtitle">Services included:</p>
+                  <p class="service_item_tags_subtitle">Das gehört dazu:</p>
                   <div class="service_item_tags_wrapper">
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">WordPress</p>
+                      <p class="service_item_tag_text">Firmenevents</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">HTML</p>
+                      <p class="service_item_tag_text">Sommerfeste</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Webflow</p>
+                      <p class="service_item_tag_text">Kongresse</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Framer</p>
+                      <p class="service_item_tag_text">Live-Mitschnitt</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Shopify</p>
+                      <p class="service_item_tag_text">Aftermovie</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Shopware</p>
+                      <p class="service_item_tag_text">Foto &amp; Video kombiniert</p>
                     </div>
                   </div>
                 </div>
@@ -849,7 +861,7 @@
                   <video autoplay="" data-object-fit="cover" id="7e1f1754-24b2-b323-76e0-fef38d75257f-video" loop="" muted="" playsinline="" poster="bilder/leistung-3.jpg" preload="none">
                     <source src="videos/leistung-3.webm" type="video/webm"/>
                   </video>
-                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d75257f-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Pause video" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Play video" loading="lazy" src="icons/play.svg"/></span></button></div>
+                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d75257f-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Video pausieren" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Video abspielen" loading="lazy" src="icons/play.svg"/></span></button></div>
                 </div>
               </div>
             </div>
@@ -857,27 +869,27 @@
           <div class="service_item">
             <div class="service_item_inner">
               <div class="service_item_content">
-                <h3 class="service_item_title" data-title-anim="">Digital Marketing</h3>
+                <h3 class="service_item_title" data-title-anim="">HOCHZEIT &amp; PAAR</h3>
                 <div class="service_item_tags_area">
-                  <p class="service_item_tags_subtitle">Services included:</p>
+                  <p class="service_item_tags_subtitle">Das gehört dazu:</p>
                   <div class="service_item_tags_wrapper">
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">SEO</p>
+                      <p class="service_item_tag_text">Trauung</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Content writing</p>
+                      <p class="service_item_tag_text">Paarshooting</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Social Media</p>
+                      <p class="service_item_tag_text">Familienshooting</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Google Ads</p>
+                      <p class="service_item_tag_text">Verlobung</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Meta Ads</p>
+                      <p class="service_item_tag_text">Hochzeitsfilm</p>
                     </div>
                     <div class="service_item_tag">
-                      <p class="service_item_tag_text">Speed Optimization</p>
+                      <p class="service_item_tag_text">Fotobuch-Beratung</p>
                     </div>
                   </div>
                 </div>
@@ -887,7 +899,7 @@
                   <video autoplay="" data-object-fit="cover" id="7e1f1754-24b2-b323-76e0-fef38d7525a1-video" loop="" muted="" playsinline="" poster="bilder/leistung-4.jpg" preload="none">
                     <source src="videos/leistung-4.webm" type="video/webm"/>
                   </video>
-                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d7525a1-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Pause video" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Play video" loading="lazy" src="icons/play.svg"/></span></button></div>
+                  <div aria-live="polite"><button aria-controls="7e1f1754-24b2-b323-76e0-fef38d7525a1-video" class="w-backgroundvideo-backgroundvideoplaypausebutton video_control_button w-background-video--control" type="button"><span class="video_state"><img alt="Video pausieren" loading="lazy" src="icons/play-button.svg"/></span><span class="video_state" hidden=""><img alt="Video abspielen" loading="lazy" src="icons/play.svg"/></span></button></div>
                 </div>
               </div>
             </div>
@@ -902,6 +914,7 @@
       <div class="border_line _4" data-bg="#e9dcd2" id=""></div>
       <div class="border_line _5" data-bg="#e9dcd2" id=""></div>
     </div>
+    <!-- ===== ABSCHNITT: Showreel-Video – Texte hier ändern ===== -->
     <section class="showreel_section">
       <div class="showreel_track" data-w-id="a5de33aa-3176-3c88-011d-0b88b5649ab8">
         <div class="showreel_sticky">
@@ -912,7 +925,7 @@
                   <video data-object-fit="cover" id="f55b5a23-5601-e934-537b-c43b67a892af-video" loop="" muted="" playsinline="" poster="bilder/showreel.jpg" preload="none">
                     <source src="videos/showreel.webm" type="video/webm"/>
                   </video>
-                  <div aria-live="polite"><button aria-controls="f55b5a23-5601-e934-537b-c43b67a892af-video" class="w-backgroundvideo-backgroundvideoplaypausebutton showreel_video_button w-background-video--control" type="button"><span class="showreel_video_icon_wrapper"><img alt="Pause video" loading="lazy" src="icons/play-button.svg"/></span><span class="showreel_video_icon_wrapper" hidden=""><img alt="Play video" loading="lazy" src="icons/play.svg"/></span></button></div>
+                  <div aria-live="polite"><button aria-controls="f55b5a23-5601-e934-537b-c43b67a892af-video" class="w-backgroundvideo-backgroundvideoplaypausebutton showreel_video_button w-background-video--control" type="button"><span class="showreel_video_icon_wrapper"><img alt="Video pausieren" loading="lazy" src="icons/play-button.svg"/></span><span class="showreel_video_icon_wrapper" hidden=""><img alt="Video abspielen" loading="lazy" src="icons/play.svg"/></span></button></div>
                 </div>
               </div>
             </div>
@@ -922,30 +935,32 @@
         </div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Vertrauens-Badge & Kundenfotos – Texte hier ändern ===== -->
     <section class="leader_section" data-w-id="a472c650-0519-8b3b-d46a-39ea94787fc7">
       <div class="leader_section_content" data-w-id="a472c650-0519-8b3b-d46a-39ea94787fc8">
-        <div class="leader_section_badge">400+ top Brands</div>
-        <h3 class="leader_section_title">Trusted by <span class="text_gradiant">Leaders</span></h3><a class="button_primary w-inline-block" data-button-primary="" data-w-id="38728d2c-eb7f-cf2b-61d3-59d872520a83" href="ueber-uns.html" target=""><div class="button_line_mask_wrapper"><div class="button_line_mask" data-button-line-mask=""></div><div class="button_line_mask _2" data-button-line-mask=""></div><div class="button_line_mask _3" data-button-line-mask=""></div></div><div class="button_line" data-button-line=""></div><div class="button_text_wrapper"><p class="button_text" data-button-text="">Mehr erfahren</p><p class="button_text second_text" data-button-text="">Mehr erfahren</p></div></a>
+        <div class="leader_section_badge">50+ zufriedene Kunden</div>
+        <h3 class="leader_section_title">Vertrauen von <span class="text_gradiant">Kunden</span></h3><a class="button_primary w-inline-block" data-button-primary="" data-w-id="38728d2c-eb7f-cf2b-61d3-59d872520a83" href="ueber-uns.html" target=""><div class="button_line_mask_wrapper"><div class="button_line_mask" data-button-line-mask=""></div><div class="button_line_mask _2" data-button-line-mask=""></div><div class="button_line_mask _3" data-button-line-mask=""></div></div><div class="button_line" data-button-line=""></div><div class="button_text_wrapper"><p class="button_text" data-button-text="">Mehr erfahren</p><p class="button_text second_text" data-button-text="">Mehr erfahren</p></div></a>
       </div>
       <div class="leader_circle_wrapper">
         <div class="leader_circle_item" data-w-id="75b34b45-6590-ddbb-86b0-0a178e8c2c17"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-1.jpg"/></div>
-        <div class="leader_circle_item _2"><img alt="White stylized block text reading 'TOU FIST' on a solid red background." class="leader_circle_image" loading="lazy" src="bilder/gesicht-2.jpg"/></div>
-        <div class="leader_circle_item _3"><img alt="Bright yellow background with a black business card featuring the name Siddhant Tiwari and a large bold yellow text block below reading 'HOLA'." class="leader_circle_image" loading="lazy" src="bilder/gesicht-3.jpg"/></div>
-        <div class="leader_circle_item _4"><img alt='"OH MY!" text logo in white inside a speech bubble on a pink background.' class="leader_circle_image" loading="lazy" src="bilder/gesicht-4.jpg"/></div>
-        <div class="leader_circle_item _5"><img alt="Bold white text reading 'IS READY' on a vibrant blue background with geometric shapes." class="leader_circle_image" loading="lazy" src="bilder/gesicht-5.jpg"/></div>
-        <div class="leader_circle_item _6"><img alt="The Bomb Shelter graffiti artist shop, studio, and gallery logo on yellow background." class="leader_circle_image" loading="lazy" src="bilder/gesicht-6.jpg"/></div>
-        <div class="leader_circle_item _7"><img alt="Qerra wordmark logo in white on a pink and orange gradient background." class="leader_circle_image" loading="lazy" src="bilder/gesicht-7.jpg"/></div>
-        <div class="leader_circle_item _8"><img alt="WAKU WAKU brand logo in bold black and white on a green background." class="leader_circle_image" loading="lazy" src="bilder/gesicht-8.jpg"/></div>
-        <div class="leader_circle_item _9"><img alt="Transparent 3D geometric shape resembling an angular loop in front of white text on a purple background." class="leader_circle_image" loading="lazy" src="bilder/gesicht-9.jpg"/></div>
-        <div class="leader_circle_item _10"><img alt="Stacked green boxes with the text 'REACH YOUR PEAK' and 'Peak' logo on a bright green background with geometric lines." class="leader_circle_image" loading="lazy" src="bilder/gesicht-10.jpg"/></div>
+        <div class="leader_circle_item _2"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-2.jpg"/></div>
+        <div class="leader_circle_item _3"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-3.jpg"/></div>
+        <div class="leader_circle_item _4"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-4.jpg"/></div>
+        <div class="leader_circle_item _5"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-5.jpg"/></div>
+        <div class="leader_circle_item _6"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-6.jpg"/></div>
+        <div class="leader_circle_item _7"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-7.jpg"/></div>
+        <div class="leader_circle_item _8"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-8.jpg"/></div>
+        <div class="leader_circle_item _9"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-9.jpg"/></div>
+        <div class="leader_circle_item _10"><img alt="" class="leader_circle_image" loading="lazy" src="bilder/gesicht-10.jpg"/></div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Kundenstimmen – Texte hier ändern ===== -->
     <section class="testimonial_section">
       <div class="padding_global">
         <div class="container">
           <div class="section_header">
-            <h2 class="text-center" data-title-anim="">Clients Feedback</h2>
-            <div class="floating_text is-testimony" data-floating-badge="">5 Star Services</div>
+            <h2 class="text-center" data-title-anim="">Kundenstimmen</h2>
+            <div class="floating_text is-testimony" data-floating-badge="">Was Kund:innen sagen</div>
           </div>
           <div class="testimonial_cards" data-slide-cards="">
             <div class="testimonial_card" data-slide-card="" data-w-id="dddde0e5-8462-f20e-9113-b8873652cd58">
@@ -967,12 +982,12 @@
 </svg></div>
               </div>
               <div class="testimonial_content_area">
-                <p class="testimonial_text">A big thank you to the Brand Apart team for their excellent work on the Robert rebrand. We’re delighted to have you as an integral part of the process.</p>
+                <p class="testimonial_text">Die Social-Media-Reels für unser Café kamen bei den Gästen richtig gut an. Der Dreh war entspannt, die Ergebnisse kamen schnell und genau im Stil, den wir uns gewünscht hatten.</p>
                 <div class="testimonial_author_area">
-                  <div class="testimonial_author_image"><img alt="Man wearing glasses and a brown jacket against an orange circular background." class="image-cover" loading="lazy" src="bilder/kundenstimme-1.jpg"/></div>
+                  <div class="testimonial_author_image"><img alt="Porträtfoto von Laura M." class="image-cover" loading="lazy" src="bilder/kundenstimme-1.jpg"/></div>
                   <div class="testimonial_author_content">
-                    <p class="testimonial_author_name">Jerome Bell</p>
-                    <p class="testimonial_author_profession">Marketing Coordinator</p>
+                    <p class="testimonial_author_name">Laura M.</p>
+                    <p class="testimonial_author_profession">Café-Inhaberin</p>
                   </div>
                 </div>
               </div>
@@ -996,12 +1011,12 @@
 </svg></div>
               </div>
               <div class="testimonial_content_area">
-                <p class="testimonial_text color-white">We’re incredibly grateful to the Brand Apart team for their best contribution to the Robert rebrand. Having you as part of the In Card team is truly valued. We’re excited for what’s ahead. We will work with them soon</p>
+                <p class="testimonial_text color-white">Der Imagefilm für unsere Tischlerei hat uns richtig überzeugt. Von der ersten Idee bis zum fertigen Schnitt hat alles gepasst – professionell, unkompliziert und mit echtem Gespür für unser Handwerk. Wir arbeiten sehr gern wieder mit ACVISUALS zusammen.</p>
                 <div class="testimonial_author_area">
-                  <div class="testimonial_author_image"><img alt="Smiling man with glasses and short curly hair wearing a black shirt against a red circular background." class="image-cover" loading="lazy" src="bilder/kundenstimme-2.jpg"/></div>
+                  <div class="testimonial_author_image"><img alt="Porträtfoto von Thomas K." class="image-cover" loading="lazy" src="bilder/kundenstimme-2.jpg"/></div>
                   <div class="testimonial_author_content">
-                    <p class="testimonial_author_name color-white">Luis Hamilton</p>
-                    <p class="testimonial_author_profession color-white">UI/UX Designer</p>
+                    <p class="testimonial_author_name color-white">Thomas K.</p>
+                    <p class="testimonial_author_profession color-white">Inhaber, Tischlerei</p>
                   </div>
                 </div>
               </div>
@@ -1025,12 +1040,12 @@
 </svg></div>
               </div>
               <div class="testimonial_content_area">
-                <p class="testimonial_text">This rebranding journey wouldn’t have been the same without the outstanding contribution of the Brand Apart team. Your strategic thinking</p>
+                <p class="testimonial_text">Die Produktfotos für unseren Onlineshop sehen jetzt endlich so aus, wie wir es uns immer gewünscht hatten. Klar, hochwertig und mit viel Liebe zum Detail.</p>
                 <div class="testimonial_author_area">
-                  <div class="testimonial_author_image"><img alt="Man with curly hair wearing sunglasses and a blue shirt against a teal background." class="image-cover" loading="lazy" src="bilder/kundenstimme-3.jpg"/></div>
+                  <div class="testimonial_author_image"><img alt="Porträtfoto von Nina R." class="image-cover" loading="lazy" src="bilder/kundenstimme-3.jpg"/></div>
                   <div class="testimonial_author_content">
-                    <p class="testimonial_author_name">Jenifer Catherin</p>
-                    <p class="testimonial_author_profession">Content Writer</p>
+                    <p class="testimonial_author_name">Nina R.</p>
+                    <p class="testimonial_author_profession">Gründerin, Naturkosmetik-Marke</p>
                   </div>
                 </div>
               </div>
@@ -1054,12 +1069,12 @@
 </svg></div>
               </div>
               <div class="testimonial_content_area">
-                <p class="testimonial_text color-white">We would like to extend our sincere appreciation to the Brand Apart team for their exceptional creativity and dedication throughout the rebranding process. Your expertise played a key role</p>
+                <p class="testimonial_text color-white">Wir möchten uns herzlich für die Business-Porträts unseres gesamten Teams bedanken. Locker, professionell und richtig schöne Ergebnisse für Website und Social Media.</p>
                 <div class="testimonial_author_area">
-                  <div class="testimonial_author_image"><img alt="Smiling man with glasses and short curly hair wearing a black shirt against a red circular background." class="image-cover" loading="lazy" src="bilder/kundenstimme-2.jpg"/></div>
+                  <div class="testimonial_author_image"><img alt="Porträtfoto von Sabine H." class="image-cover" loading="lazy" src="bilder/kundenstimme-2.jpg"/></div>
                   <div class="testimonial_author_content">
-                    <p class="testimonial_author_name color-white">Daniel Danzo</p>
-                    <p class="testimonial_author_profession color-white">Video Editor</p>
+                    <p class="testimonial_author_name color-white">Sabine H.</p>
+                    <p class="testimonial_author_profession color-white">Personalleitung, Kanzlei</p>
                   </div>
                 </div>
               </div>
@@ -1068,6 +1083,7 @@
         </div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Kontakt-Aufruf (CTA) – Texte hier ändern ===== -->
     <section class="cta_section">
       <div class="cta_ticker_row">
         <h2 class="cta_ticker_text" data-stroke="no">Lass uns gemeinsam etwas Großes erschaffen</h2>
@@ -1089,6 +1105,7 @@
       <div class="border_line _4" data-bg="#000" id=""></div>
       <div class="border_line _5" data-bg="#000" id=""></div>
     </div>
+    <!-- ===== ABSCHNITT: Fußzeile (auf allen Seiten gleich) – Texte hier ändern ===== -->
     <footer class="footer">
       <div class="padding_global">
         <div class="container">

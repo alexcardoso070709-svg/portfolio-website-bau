@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="css/vorlage.css">
 <link rel="stylesheet" href="css/lenis.css">
 <link rel="stylesheet" href="css/eigene.css">
+<link rel="stylesheet" href="css/seiten.css">
 <script src="js/js-check.js"></script>
 <script defer src="js/vendor/gsap.min.js"></script>
 <script defer src="js/vendor/ScrollTrigger.min.js"></script>
@@ -31,11 +32,13 @@
 <script defer src="js/main.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
   <div class="page_wrapper">
+    <!-- ===== ABSCHNITT: Kopfzeile und Menü (auf allen Seiten gleich) ===== -->
     <div class="navigation is-secondary w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" id="main-nav" role="banner">
       <div class="navigation_wrapper"><a class="brand is-dark w-nav-brand" href="index.html"><p class="logo_text is-dark">// ACVISUALS</p></a>
         <nav class="nav_menu w-nav-menu" role="navigation">
-          <div class="nav_menu_wrapper"><a class="nav_link is-secondary w-inline-block" data-link="" href="ueber-uns.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Über uns</p><p class="nav_link_text is-dark _2" data-link-text="">Über uns</p></div></a><a class="nav_link is-secondary w-inline-block" data-link="" href="projekte.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Projekte</p><p class="nav_link_text is-dark _2" data-link-text="">Projekte</p></div></a><a class="nav_link is-secondary w-inline-block" data-link="" href="leistungen.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">services</p><p class="nav_link_text is-dark _2" data-link-text="">services</p></div></a><a aria-current="page" class="nav_link is-secondary w-inline-block w--current" data-link="" href="kontakt.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">contact</p><p class="nav_link_text is-dark _2" data-link-text="">contact</p></div></a></div>
+          <div class="nav_menu_wrapper"><a class="nav_link is-secondary w-inline-block" data-link="" href="ueber-uns.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Über uns</p><p class="nav_link_text is-dark _2" data-link-text="">Über uns</p></div></a><a class="nav_link is-secondary w-inline-block" data-link="" href="projekte.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Projekte</p><p class="nav_link_text is-dark _2" data-link-text="">Projekte</p></div></a><a class="nav_link is-secondary w-inline-block" data-link="" href="leistungen.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Leistungen</p><p class="nav_link_text is-dark _2" data-link-text="">Leistungen</p></div></a><a aria-current="page" class="nav_link is-secondary w-inline-block w--current" data-link="" href="kontakt.html"><div class="nav_link_circle is-secondary"></div><div class="nav_link_text_wrap"><p class="nav_link_text is-dark" data-link-text="">Kontakt</p><p class="nav_link_text is-dark _2" data-link-text="">Kontakt</p></div></a></div>
         </nav>
         <div class="hamburger_menu_icon w-variant-f2cbe589-1fd0-33a3-fc39-1d62a9947e8a" data-menu-icon="">
           <div class="hamburger_menu_inner" data-menu-inner="">
@@ -70,22 +73,62 @@
         </div>
       </div>
     </div>
-    <section class="contact_section">
+    <!-- ===== ABSCHNITT: Kontakt – Überschrift und Formulare. Texte, Feldnamen und Auswahl-Listen hier ändern ===== -->
+    <section class="contact_section" id="inhalt">
       <div class="padding_global">
         <div class="container">
           <div class="contact_hero_content">
             <div class="contact_heading">
               <div class="section_caption" data-w-id="fda64209-c9a2-ae54-9670-45da6393c342">
                 <div class="section_caption_circle"></div>
-                <p class="section_caption_text">Get <span class="text-italic">(In)</span> Touch</p>
+                <p class="section_caption_text">Schreib <span class="text-italic">(uns)</span> an</p>
               </div>
-              <h1 class="heading-style-h3 is-contact" data-title="">LET'S ROAR INTO THE WILD TOGETHER.</h1>
+              <h1 class="heading-style-h3 is-contact" data-title="">Lass uns deine Geschichte erzählen.</h1>
             </div>
+            <!-- Zwei Reiter: „Hallo sagen“ (kurze Nachricht) und „Angebot anfragen“ (mit Leistung und Budget).
+                 Die Formulare werden beim Hoster (z. B. Netlify Forms) gesammelt; danach öffnet sich danke.html. -->
             <div class="contact_tabs w-tabs" data-current="Tab 1" data-duration-in="300" data-duration-out="100" data-easing="ease">
-              <div class="contact_tabs_menu w-tab-menu"><a class="contact_tabs_links w-inline-block w-tab-link w--current" data-w-tab="Tab 1"><div class="contact_tabs_link_text">SAY HELLO</div></a><a class="contact_tabs_links w-inline-block w-tab-link" data-w-tab="Tab 2"><div class="contact_tabs_link_text">GET a Quote</div></a></div>
+              <div class="contact_tabs_menu w-tab-menu" role="tablist"><a aria-controls="bereich-nachricht" aria-selected="true" class="contact_tabs_links w-inline-block w-tab-link w--current" data-w-tab="Tab 1" href="#bereich-nachricht" id="reiter-nachricht" role="tab"><div class="contact_tabs_link_text">Hallo sagen</div></a><a aria-controls="bereich-angebot" aria-selected="false" class="contact_tabs_links w-inline-block w-tab-link" data-w-tab="Tab 2" href="#bereich-angebot" id="reiter-angebot" role="tab"><div class="contact_tabs_link_text">Angebot anfragen</div></a></div>
               <div class="contact_tabs_content w-tab-content">
-                <div class="contact_tabs_tab_pane w-tab-pane w--tab-active" data-w-tab="Tab 1">
+                <!-- ===== Reiter 1: „Hallo sagen“ – allgemeine Nachricht ===== -->
+                <div aria-labelledby="reiter-nachricht" class="contact_tabs_tab_pane w-tab-pane w--tab-active" data-w-tab="Tab 1" id="bereich-nachricht" role="tabpanel">
                   <div class="contact_form_block w-form">
+                    <form action="danke.html" class="contact_form" data-netlify="true" data-netlify-honeypot="bot-field" id="formular-nachricht" method="post" name="kontakt">
+                      <!-- Technisch nötig für den Formular-Dienst – nicht löschen -->
+                      <input name="form-name" type="hidden" value="kontakt">
+                      <!-- Spam-Falle: für Besucher unsichtbar, nur Spam-Programme füllen dieses Feld aus -->
+                      <p class="kontakt_honigtopf" aria-hidden="true"><label for="nachricht-bot">Dieses Feld bitte leer lassen: <input autocomplete="off" id="nachricht-bot" name="bot-field" tabindex="-1" type="text"></label></p>
+                      <div class="contact_form_input_wrapper">
+                        <div class="contact_form_input_item">
+                          <label class="contact_form_label" for="nachricht-name">Name*</label>
+                          <input autocomplete="name" class="contact_form_input w-input" id="nachricht-name" maxlength="256" name="name" placeholder="Dein Name" required type="text">
+                        </div>
+                        <div class="contact_form_input_item">
+                          <label class="contact_form_label" for="nachricht-email">E-Mail*</label>
+                          <input autocomplete="email" class="contact_form_input w-input" id="nachricht-email" maxlength="256" name="email" placeholder="Deine E-Mail-Adresse" required type="email">
+                        </div>
+                        <div class="contact_form_input_item">
+                          <label class="contact_form_label" for="nachricht-telefon">Telefon</label>
+                          <input autocomplete="tel" class="contact_form_input w-input" id="nachricht-telefon" maxlength="256" name="telefon" placeholder="Telefonnummer (optional)" type="tel">
+                        </div>
+                        <div class="contact_form_input_item">
+                          <label class="contact_form_label" for="nachricht-unternehmen">Unternehmen</label>
+                          <input autocomplete="organization" class="contact_form_input w-input" id="nachricht-unternehmen" maxlength="256" name="unternehmen" placeholder="Firmenname (optional)" type="text">
+                        </div>
+                        <div class="contact_form_input_item" id="w-node-b86c6ad8-2dba-7347-8e90-25275f21903c-f864df35">
+                          <label class="contact_form_label" for="nachricht-text">Nachricht*</label>
+                          <textarea class="contact_form_input is-textarea w-input" id="nachricht-text" maxlength="5000" name="nachricht" placeholder="Erzähl uns, was du vorhast" required></textarea>
+                        </div>
+                        <!-- Pflicht-Häkchen zum Datenschutz -->
+                        <div class="contact_form_input_item kontakt_zustimmung">
+                          <input class="kontakt_checkbox" id="nachricht-datenschutz" name="datenschutz" required type="checkbox" value="gelesen">
+                          <label class="kontakt_checkbox_label" for="nachricht-datenschutz">Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und weiß, dass meine Angaben zur Bearbeitung meiner Anfrage verarbeitet werden.*</label>
+                        </div>
+                      </div>
+                      <div class="align-center">
+                        <button class="button_primary cursor-pointer" data-button-primary="" data-w-id="4025ac4a-6549-2c92-664a-c77a444ccce5" data-wf--submit-button--variant="base" type="submit"><div class="button_line_mask_wrapper"><div class="button_line_mask" data-button-line-mask=""></div><div class="button_line_mask _2" data-button-line-mask=""></div><div class="button_line_mask _3" data-button-line-mask=""></div></div><div class="button_line pointer-events-none" data-button-line=""></div><div class="button_text_wrapper pointer-events-none"><p class="button_text" data-button-text="">Nachricht senden</p><p aria-hidden="true" class="button_text second_text" data-button-text="">Nachricht senden</p></div></button>
+                      </div>
+                    </form>
                     <div class="form_success w-form-done">
                       <div>Danke! Deine Nachricht ist angekommen.</div>
                     </div>
@@ -94,8 +137,71 @@
                     </div>
                   </div>
                 </div>
-                <div class="contact_tabs_tab_pane w-tab-pane" data-w-tab="Tab 2">
+                <!-- ===== Reiter 2: „Angebot anfragen“ – mit Auswahl der Leistung und des Budgets ===== -->
+                <div aria-labelledby="reiter-angebot" class="contact_tabs_tab_pane w-tab-pane" data-w-tab="Tab 2" id="bereich-angebot" role="tabpanel">
                   <div class="contact_form_block w-form">
+                    <form action="danke.html" class="contact_form" data-netlify="true" data-netlify-honeypot="bot-field" id="formular-angebot" method="post" name="angebot">
+                      <!-- Technisch nötig für den Formular-Dienst – nicht löschen -->
+                      <input name="form-name" type="hidden" value="angebot">
+                      <!-- Spam-Falle: für Besucher unsichtbar, nur Spam-Programme füllen dieses Feld aus -->
+                      <p class="kontakt_honigtopf" aria-hidden="true"><label for="angebot-bot">Dieses Feld bitte leer lassen: <input autocomplete="off" id="angebot-bot" name="bot-field" tabindex="-1" type="text"></label></p>
+                      <div class="contact_form_input_wrapper">
+                        <div class="contact_form_input_item">
+                          <label class="contact_form_label" for="angebot-name">Name*</label>
+                          <input autocomplete="name" class="contact_form_input w-input" id="angebot-name" maxlength="256" name="name" placeholder="Dein Name" required type="text">
+                        </div>
+                        <div class="contact_form_input_item">
+                          <label class="contact_form_label" for="angebot-email">E-Mail*</label>
+                          <input autocomplete="email" class="contact_form_input w-input" id="angebot-email" maxlength="256" name="email" placeholder="Deine E-Mail-Adresse" required type="email">
+                        </div>
+                        <div class="contact_form_input_item">
+                          <label class="contact_form_label" for="angebot-telefon">Telefon</label>
+                          <input autocomplete="tel" class="contact_form_input w-input" id="angebot-telefon" maxlength="256" name="telefon" placeholder="Telefonnummer (optional)" type="tel">
+                        </div>
+                        <div class="contact_form_input_item">
+                          <label class="contact_form_label" for="angebot-unternehmen">Unternehmen</label>
+                          <input autocomplete="organization" class="contact_form_input w-input" id="angebot-unternehmen" maxlength="256" name="unternehmen" placeholder="Firmenname (optional)" type="text">
+                        </div>
+                        <!-- Auswahl-Liste „Anliegen / Leistung“: jede Zeile <option> ist ein Eintrag -->
+                        <div class="contact_form_input_item">
+                          <label class="contact_form_label" for="angebot-leistung">Anliegen / Leistung*</label>
+                          <select autocomplete="off" class="contact_form_input is-select w-select" id="angebot-leistung" name="leistung" required>
+                            <option value="">Bitte auswählen</option>
+                            <option value="Imagefilm / Unternehmensvideo">Imagefilm / Unternehmensvideo</option>
+                            <option value="Business-Fotografie">Business-Fotografie</option>
+                            <option value="Produktfotografie">Produktfotografie</option>
+                            <option value="Event">Event</option>
+                            <option value="Social-Media-Content">Social-Media-Content</option>
+                            <option value="Hochzeit">Hochzeit</option>
+                            <option value="Privates Shooting">Privates Shooting</option>
+                            <option value="Sonstiges">Sonstiges</option>
+                          </select>
+                        </div>
+                        <!-- Auswahl-Liste „Budget“ (freiwillig) – Beträge nach Bedarf anpassen -->
+                        <div class="contact_form_input_item">
+                          <label class="contact_form_label" for="angebot-budget">Budget</label>
+                          <select autocomplete="off" class="contact_form_input is-select w-select" id="angebot-budget" name="budget">
+                            <option value="">Noch offen</option>
+                            <option value="bis 1.000 €">bis 1.000 €</option>
+                            <option value="1.000 – 2.500 €">1.000 – 2.500 €</option>
+                            <option value="2.500 – 5.000 €">2.500 – 5.000 €</option>
+                            <option value="über 5.000 €">über 5.000 €</option>
+                          </select>
+                        </div>
+                        <div class="contact_form_input_item" id="w-node-d470ade0-a311-6508-2ec2-7869df86e2a6-f864df35">
+                          <label class="contact_form_label" for="angebot-text">Nachricht*</label>
+                          <textarea class="contact_form_input is-textarea w-input" id="angebot-text" maxlength="5000" name="nachricht" placeholder="Worum geht’s? Termin, Ort, Umfang …" required></textarea>
+                        </div>
+                        <!-- Pflicht-Häkchen zum Datenschutz -->
+                        <div class="contact_form_input_item kontakt_zustimmung">
+                          <input class="kontakt_checkbox" id="angebot-datenschutz" name="datenschutz" required type="checkbox" value="gelesen">
+                          <label class="kontakt_checkbox_label" for="angebot-datenschutz">Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und weiß, dass meine Angaben zur Bearbeitung meiner Anfrage verarbeitet werden.*</label>
+                        </div>
+                      </div>
+                      <div class="align-center">
+                        <button class="button_primary cursor-pointer" data-button-primary="" data-w-id="4025ac4a-6549-2c92-664a-c77a444ccce5" data-wf--submit-button--variant="base" type="submit"><div class="button_line_mask_wrapper"><div class="button_line_mask" data-button-line-mask=""></div><div class="button_line_mask _2" data-button-line-mask=""></div><div class="button_line_mask _3" data-button-line-mask=""></div></div><div class="button_line pointer-events-none" data-button-line=""></div><div class="button_text_wrapper pointer-events-none"><p class="button_text" data-button-text="">Anfrage senden</p><p aria-hidden="true" class="button_text second_text" data-button-text="">Anfrage senden</p></div></button>
+                      </div>
+                    </form>
                     <div class="form_success w-form-done">
                       <div>Danke! Deine Nachricht ist angekommen.</div>
                     </div>
@@ -110,6 +216,7 @@
         </div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Laufschrift mit Anfrage-Button ===== -->
     <section class="cta_section">
       <div class="cta_ticker_row">
         <h2 class="cta_ticker_text" data-stroke="no">Lass uns gemeinsam etwas Großes erschaffen</h2>
@@ -131,6 +238,7 @@
       <div class="border_line _4" data-bg="#000" id=""></div>
       <div class="border_line _5" data-bg="#000" id=""></div>
     </div>
+    <!-- ===== ABSCHNITT: Fußzeile (auf allen Seiten gleich) ===== -->
     <footer class="footer">
       <div class="padding_global">
         <div class="container">
@@ -177,6 +285,5 @@
       </div>
     </footer>
   </div>
-  <!-- Lenis setup -->
 </body>
 </html>
