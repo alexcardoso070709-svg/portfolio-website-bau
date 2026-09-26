@@ -9,6 +9,12 @@
 /* --- Projekte / Blog --- */
 
 /* --- Kontakt / 404 / Rechtliches --- */
+/* Spam-Falle: für Menschen unsichtbar */
+.kontakt_honigtopf { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+/* Zustimmung zur Datenschutzerklärung */
+.kontakt_zustimmung { display: flex; gap: .75rem; align-items: flex-start; }
+.kontakt_checkbox { flex: none; width: 20px; height: 20px; margin-top: .15em; accent-color: #ff691e; }
+.kontakt_checkbox_label a { text-decoration: underline; }
 
 /* Gelbe Markierung für fehlende Angaben (Impressum/Datenschutz), bis der Inhaber sie ergänzt hat */
 mark.fehlt {

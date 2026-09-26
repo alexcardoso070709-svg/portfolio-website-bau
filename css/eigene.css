@@ -38,10 +38,23 @@
 }
 
 /* Tastatur-Fokus gut sichtbar (Kontrast mind. 3:1 auf hell und dunkel) */
-:focus-visible {
-  outline: 3px solid #ff691e;
+/* Schwarzer Rahmen mit weißem Hof: auf hellen, dunklen und orangen Flächen sichtbar */
+:focus-visible,
+.w-tab-link:focus-visible,
+.w-input:focus-visible,
+.w-select:focus-visible {
+  outline: 3px solid #000;
   outline-offset: 3px;
+  box-shadow: 0 0 0 9px #fff;
 }
+/* Fokussierte Karte nach vorn holen, damit der Fokus nicht verdeckt ist */
+.service_item:focus-within,
+[data-work-item]:focus-within { z-index: 20; }
+
+/* Kontraste */
+.hero_social_icon_link { color: #fff; }
+.contact_tabs_links { opacity: .6; }
+.about_stats_item { background-color: #d9500c; }
 
 /* Skip-Link */
 .skip-link {
