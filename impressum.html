@@ -4,13 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; manifest-src 'self'">
-<title>Blog – ACVISUALS</title>
-<meta name="description" content="Artikel von ACVISUALS.">
+<title>Impressum – ACVISUALS</title>
+<meta name="description" content="Impressum von ACVISUALS gemäß § 5 DDG.">
+<link rel="canonical" href="https://www.acvisuals.de/impressum.html">
+<meta property="og:url" content="https://www.acvisuals.de/impressum.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ACVISUALS">
-<meta property="og:title" content="Blog – ACVISUALS">
-<meta property="og:description" content="Artikel von ACVISUALS.">
-<meta property="og:image" content="bilder/og-bild.jpg">
+<meta property="og:title" content="Impressum – ACVISUALS">
+<meta property="og:description" content="Impressum von ACVISUALS gemäß § 5 DDG.">
+<meta property="og:image" content="https://www.acvisuals.de/bilder/og-bild.jpg">
 <meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#000000">
@@ -23,6 +25,7 @@
 <link rel="stylesheet" href="css/vorlage.css">
 <link rel="stylesheet" href="css/lenis.css">
 <link rel="stylesheet" href="css/eigene.css">
+<link rel="stylesheet" href="css/seiten.css">
 <script src="js/js-check.js"></script>
 <script defer src="js/vendor/gsap.min.js"></script>
 <script defer src="js/vendor/ScrollTrigger.min.js"></script>
@@ -31,7 +34,9 @@
 <script defer src="js/main.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
   <div class="page_wrapper">
+    <!-- ===== ABSCHNITT: Kopfzeile und Menü (auf allen Seiten gleich) ===== -->
     <div class="navigation is-secondary w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" id="main-nav" role="banner">
       <div class="navigation_wrapper"><a class="brand is-dark w-nav-brand" href="index.html"><p class="logo_text is-dark">// ACVISUALS</p></a>
         <nav class="nav_menu w-nav-menu" role="navigation">
@@ -58,7 +63,7 @@
               <div class="hero_social_line"></div>
               <div class="hero_social_icon_wrapper"><a aria-label="ACVISUALS auf TikTok" class="hero_social_icon_link w-inline-block" href="https://www.tiktok.com/" rel="noopener" target="_blank"><div class="hero_social_icon w-embed"><svg fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
 <path clip-rule="evenodd" d="M9.94419 1.4518e-07H10.0558C12.1931 -9.61092e-06 13.8718 -1.93352e-05 15.1824 0.176186C16.5255 0.356761 17.5911 0.734351 18.4284 1.57162C19.2657 2.40889 19.6432 3.47451 19.8238 4.81758C20 6.12823 20 7.80697 20 9.94419V10.0558C20 12.1931 20 13.8718 19.8238 15.1824C19.6432 16.5255 19.2657 17.5911 18.4284 18.4284C17.5911 19.2657 16.5255 19.6432 15.1824 19.8238C13.8718 20 12.1931 20 10.0558 20H9.94419C7.80693 20 6.12823 20 4.81758 19.8238C3.47451 19.6432 2.40889 19.2657 1.57162 18.4284C0.734361 17.5911 0.356761 16.5255 0.176186 15.1824C-1.93352e-05 13.8718 -9.61092e-06 12.1931 1.4518e-07 10.0558V9.94419C-9.61092e-06 7.80694 -1.93352e-05 6.12823 0.176186 4.81758C0.356761 3.47451 0.734361 2.40889 1.57162 1.57162C2.40889 0.734351 3.47451 0.356761 4.81758 0.176186C6.12822 -1.93352e-05 7.80697 -9.61092e-06 9.94419 1.4518e-07ZM12.2514 4.56446C12.2514 4.06414 11.8482 3.65854 11.3508 3.65854C10.8535 3.65854 10.4502 4.06414 10.4502 4.56446V12.2648C10.4502 13.5156 9.44224 14.5297 8.19883 14.5297C6.95545 14.5297 5.94746 13.5156 5.94746 12.2648C5.94746 11.014 6.95545 10 8.19883 10C8.30898 10 8.41668 10.0079 8.52166 10.023C9.01395 10.0939 9.47024 9.74976 9.54068 9.25444C9.61102 8.75922 9.26907 8.30019 8.77668 8.22937C8.58751 8.20215 8.39454 8.1882 8.19883 8.1882C5.96072 8.1882 4.14634 10.0134 4.14634 12.2648C4.14634 14.5163 5.96072 16.3415 8.19883 16.3415C10.4371 16.3415 12.2514 14.5163 12.2514 12.2648V7.75527C13.0316 8.3041 13.9924 8.64107 14.9531 8.64107C15.4504 8.64107 15.8537 8.23551 15.8537 7.73519C15.8537 7.23487 15.4504 6.82927 14.9531 6.82927C14.3132 6.82927 13.6131 6.56201 13.0765 6.11119C12.5406 5.66101 12.2514 5.10406 12.2514 4.56446Z" fill="white" fill-rule="evenodd"></path>
-</svg></div></a><a aria-label="ACVISUALS auf Instagram" class="hero_social_icon_link w-inline-block" href="https://www.instagram.com/" rel="noopener" target="_blank"><div class="hero_social_icon w-embed"><svg aria-hidden="true" fill="none" height="100%" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg"><rect height="18" rx="5" stroke="currentColor" stroke-width="2" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="1.2"></circle></svg></div></a></div>
+</svg></div></a><a aria-label="ACVISUALS auf Instagram" class="hero_social_icon_link w-inline-block" href="https://www.instagram.com/" rel="noopener" target="_blank"><div class="hero_social_icon w-embed"><svg aria-hidden="true" fill="none" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><rect height="18" rx="5" stroke="currentColor" stroke-width="2" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="1.2"></circle></svg></div></a></div>
             </div><a class="link-primary text-18px" href="tel:+490000000000">+49 000 000 0000</a>
           </div>
           <div class="hamburger_menu_icon is-close" menu-close-icon="">
@@ -70,35 +75,33 @@
         </div>
       </div>
     </div>
-    <section class="blog_details_section">
+    <!-- ===== ABSCHNITT: Impressum – Angaben unten ergänzen, sobald sie feststehen (gelb markierte Stellen) ===== -->
+    <section class="blog_details_section" id="inhalt">
       <div class="padding_global">
         <div class="container">
           <div class="blog_details_header">
-            <div class="section_caption">
-              <div class="section_caption_circle"></div>
-              <p class="section_caption_text">December 3, 2025</p>
-            </div>
-            <h1 class="heading-style-h4" data-title="">QA article by The FWA team — Read all about our thought</h1>
+            <h1 class="heading-style-h4" data-title="">Impressum</h1>
           </div>
-          <div class="blog_image"><img alt="" class="image-cover" loading="lazy" src="bilder/blog-1.jpg"/></div>
           <div class="primary_richtext w-richtext">
-            <h5>Instructions on Details</h5>
-            <p>Our journey has been marked by countless successful projects that not only for achieved but surpassed our clients' goals, reinforcing their trust in us as a leading innovator in the digital.</p>
-            <h5>Quality over quantity</h5>
-            <p>In an increasingly competitive context, must stand out against players (other rail brands, carpooling, airlines, while the destination “Switzerland” it promotes suffers from a lack of desirability on our side of the border.</p>
-            <h5>Lets go inside the topic</h5>
-            <p>We’re not here to help Babybel develop new flavors, EDF invent new batteries, or Adidas engineer a next-gen sole. But we can help these brands rethink their positioning, explore new uses, expand their core business, and develop meaningful extensions, ensuring their cultural relevance today and their place in tomorrow’s market.</p>
-            <ul role="list">
-              <li>We confront these trends with the real-life experiences of your customers and users.</li>
-              <li>Our approach is built on two pillars: identifying emerging trends and conducting an in-depth analysis</li>
-              <li>We capture cultural and behavioral trends before they become mainstream.</li>
-            </ul>
-            <blockquote>“ One visual theme that we implemented throughout the website is the juxtaposition of two opposing typefaces ”</blockquote>
-            <p>Building a distinctive, ownable brand territory for TGV Lyria one that creates an emotional connection beyond purely rational factorsThis communication territory is rooted in TGV Lyria’s unique bi-national identity and highlights the shared values and cultural connections between the French and the Swiss connections embodied by the brand itself.</p>
+            <h5>Angaben gemäß § 5 DDG</h5>
+            <p>ACVISUALS<br><mark class="fehlt">[Vorname Nachname – bitte ergänzen]</mark><br><mark class="fehlt">[Straße, Hausnummer, PLZ, Ort – bitte ergänzen]</mark><br>Deutschland</p>
+            <h5>Kontakt</h5>
+            <p>Telefon: <mark class="fehlt">[Telefonnummer – bitte bestätigen]</mark><br>E-Mail: <mark class="fehlt">[E-Mail-Adresse – bitte bestätigen]</mark></p>
+            <h5>Umsatzsteuer</h5>
+            <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: <mark class="fehlt">[USt-IdNr. oder Hinweis „Kein Ausweis der Umsatzsteuer nach § 19 UStG (Kleinunternehmerregelung)“ – bitte ergänzen]</mark></p>
+            <h5>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h5>
+            <p><mark class="fehlt">[Vorname Nachname – bitte ergänzen]</mark>, Anschrift wie oben.</p>
+            <h5>Verbraucherstreitbeilegung</h5>
+            <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+            <h5>Haftung für Inhalte</h5>
+            <p>Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen. Bei Bekanntwerden entsprechender Rechtsverletzungen entfernen wir diese Inhalte umgehend.</p>
+            <h5>Urheberrecht</h5>
+            <p>Die durch uns erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>
           </div>
         </div>
       </div>
     </section>
+    <!-- ===== ABSCHNITT: Laufschrift mit Anfrage-Button ===== -->
     <section class="cta_section">
       <div class="cta_ticker_row">
         <h2 class="cta_ticker_text" data-stroke="no">Lass uns gemeinsam etwas Großes erschaffen</h2>
@@ -120,6 +123,7 @@
       <div class="border_line _4" data-bg="#000" id=""></div>
       <div class="border_line _5" data-bg="#000" id=""></div>
     </div>
+    <!-- ===== ABSCHNITT: Fußzeile (auf allen Seiten gleich) ===== -->
     <footer class="footer">
       <div class="padding_global">
         <div class="container">
@@ -140,12 +144,13 @@
               </div>
               <div class="footer_link_col" id="w-node-acf3e24e-2686-e8fa-9eb0-72f3ac276aec-ac276ac6">
                 <p class="footer_link_col_heading">Rechtliches</p>
-                <div class="footer_link_wrapper"><a class="footer_link_widget w-inline-block" data-link="" href="impressum.html"><p class="footer_link_text" data-link-text="">Impressum </p><p class="footer_link_text secondary-text" data-link-text="">Impressum </p></a><a class="footer_link_widget w-inline-block" data-link="" href="datenschutz.html"><p class="footer_link_text" data-link-text="">Datenschutz </p><p class="footer_link_text secondary-text" data-link-text="">Datenschutz </p></a></div>
+                <div class="footer_link_wrapper"><a aria-current="page" class="footer_link_widget w-inline-block w--current" data-link="" href="impressum.html"><p class="footer_link_text" data-link-text="">Impressum </p><p class="footer_link_text secondary-text" data-link-text="">Impressum </p></a><a class="footer_link_widget w-inline-block" data-link="" href="datenschutz.html"><p class="footer_link_text" data-link-text="">Datenschutz </p><p class="footer_link_text secondary-text" data-link-text="">Datenschutz </p></a></div>
               </div>
             </div>
             <div class="footer_cta">
               <p class="footer_link_col_heading">Newsletter abonnieren</p>
               <div class="footer_cta_form_block w-form">
+                <form action="danke.html" class="footer_cta_form" data-netlify="true" data-netlify-honeypot="bot-field" method="post" name="newsletter"><input name="form-name" type="hidden" value="newsletter"/><input class="footer_cta_input w-input" aria-label="E-Mail-Adresse für den Newsletter" autocomplete="email" maxlength="256" name="email" placeholder="Deine E-Mail-Adresse" required="" type="email"/><input class="footer_cta_submit_button w-button" type="submit" value="Abonnieren"/></form>
                 <div class="form_success w-form-done">
                   <div>Danke! Deine Nachricht ist angekommen.</div>
                 </div>

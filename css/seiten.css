@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Seiten-spezifische Anpassungen. Jede Seite hat ihren eigenen Abschnitt.
+   ========================================================================== */
+
+/* --- Startseite (index.html) --- */
+
+/* --- Über uns / Leistungen --- */
+
+/* --- Projekte / Blog --- */
+
+/* --- Kontakt / 404 / Rechtliches --- */
+
+/* Gelbe Markierung für fehlende Angaben (Impressum/Datenschutz), bis der Inhaber sie ergänzt hat */
+mark.fehlt {
+  background-color: #ffe066;
+  color: #000;
+  padding: 0.05em 0.3em;
+}
