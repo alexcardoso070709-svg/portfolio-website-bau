@@ -135,7 +135,23 @@ Diese Stellen sind **Platzhalter** und müssen vor dem Start geprüft oder erset
 ### Inhalte
 - [ ] Alle Fotos und Videos durch eigene Arbeiten ersetzen (siehe Abschnitt 2).
 - [ ] Texte prüfen – sie sind improvisiert. Schreibt ihr als „wir" oder „ich"?
-<!-- OFFENE-PUNKTE-INHALT -->
+- [ ] **Erfundene Zahlen** prüfen oder ändern:
+      Startseite „50+ Projekte umgesetzt" und „50+ zufriedene Kunden";
+      „Über uns": 30+ Unternehmen, 20+ Hochzeiten/Feiern, 10+ sowie Bewertung „4.9"
+      (nur angeben, wenn es echte Bewertungen gibt).
+- [ ] **Meilensteine 2020–2025** auf der Startseite (erste Kamera, erste Hochzeit,
+      Gewerbestart, Firmenkunden, Imagefilme, Social Media) an die echte Geschichte anpassen.
+- [ ] **Team** auf „Über uns" (Max Mustermann, Erika Musterfrau, Jonas Beispiel …):
+      echte Namen und Fotos eintragen – oder den Abschnitt auf eine Person umschreiben.
+- [ ] **Kundenstimmen** (Laura M., Thomas K., Nina R., Sabine H., Markus B., Markus W.)
+      sind erfunden. Nur echte Stimmen mit Erlaubnis der Kunden verwenden.
+- [ ] **Kundenlogos** (`icons/kunde-1.svg` … `-6.svg`) sind Fantasie-Zeichen.
+      Echte Logos nur mit Erlaubnis der Kunden.
+- [ ] **Projekte 1–6** und **Blog-Artikel 1–4**: Kunden, Jahre, Texte und die vier
+      Prozent-Kennzahlen auf den Projektseiten („Die Umsetzung") sind Beispiele.
+- [ ] **Newsletter** im Footer: Es gibt noch keinen Versanddienst. Entweder einen Dienst mit
+      Double-Opt-In einrichten und in der Datenschutzerklärung eintragen – oder das Formular
+      entfernen.
 
 ---
 
