@@ -1,16 +1,40 @@
 /* ==========================================================================
    Eigene Ergänzungen zur Vorlage (Ariyana, Webflow).
    Hier stehen nur Regeln, die die Vorlage selbst nicht hat.
+   Die Animationen selbst stehen in js/main.js.
    ========================================================================== */
 
-/* Elemente, die per Animation eingeblendet werden, erst verstecken,
-   wenn JavaScript läuft. Sicherheitsnetz: nach 3 s trotzdem sichtbar. */
+/* Elemente, die per Animation eingeblendet werden, erst verstecken, wenn JavaScript
+   läuft – bis js/main.js die Startzustände gesetzt hat (Klasse .anim-bereit).
+   Sicherheitsnetz: nach 3 s trotzdem sichtbar. Bei reduzierter Bewegung nie verstecken. */
 @keyframes sicherheitsnetz { to { visibility: visible; } }
-html.js:not(.anim-bereit) :is([data-button-text], [data-stroke="no"], [data-stroke="yes"], [data-slide-card],
-  [data-menu-text]:nth-of-type(1), [data-menu-text]:nth-of-type(2), .brands_ticker_row, [data-title-anim],
-  [data-floating-badge], [data-text-anim], [data-title], [data-image-span], .service_video_wrapper) {
-  visibility: hidden;
-  animation: sicherheitsnetz 0s 3s forwards;
+@keyframes preloader-weg { to { transform: translateY(-120%); visibility: hidden; } }
+@media (prefers-reduced-motion: no-preference) {
+  html.js:not(.anim-bereit) :is([data-hero-title], [data-hero-subtitle], [data-hero-text],
+    .hero_section .hero_social_links, .hero_section .hero_stat, [data-title], [data-image-span],
+    [data-title-anim], [data-text-anim], [data-floating-badge], [data-slide-card],
+    .service_video_wrapper, [data-w-id="fda64209-c9a2-ae54-9670-45da6393c342"]) {
+    visibility: hidden;
+    animation: sicherheitsnetz 0s 3s forwards;
+  }
+  /* Preloader (nur Startseite) deckt die Seite sofort ab, solange JS startet. */
+  html.js:not(.anim-bereit) .preloader {
+    transform: none;
+    animation: preloader-weg 0s 3s forwards;
+  }
+}
+
+/* Text für Screenreader, wenn ein Text für die Animation in Buchstaben zerlegt wurde */
+.anim-sr {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Tastatur-Fokus gut sichtbar (Kontrast mind. 3:1 auf hell und dunkel) */
@@ -32,8 +56,73 @@ html.js:not(.anim-bereit) :is([data-button-text], [data-stroke="no"], [data-stro
 }
 .skip-link:focus { top: 1rem; }
 
-/* Farbflächen, die in der Vorlage als Inline-Style gesetzt waren */
-[data-bg] { background-color: var(--bg-farbe, transparent); }
+/* Farbflächen, die in der Vorlage als Inline-Style gesetzt waren (data-bg="#hex",
+   von js/main.js in --bg-farbe übertragen). !important ersetzt die Stärke des Inline-Styles;
+   ohne JavaScript gelten die Standardfarben der Vorlage. */
+html.js [data-bg] { background-color: var(--bg-farbe) !important; }
+
+/* Jahres-Leiste (Startseite): Bilder im Querformat wie in der Vorlage (16:10),
+   damit die Einträge im Sticky-Bereich vollständig in den Bildschirm passen. */
+.year_image { aspect-ratio: 16 / 10; }
+
+/* Menü offen: Seite dahinter nicht scrollen */
+html.menue-offen { overflow: hidden; }
+
+/* Ohne JavaScript: Menü erscheint, sobald ein Link darin per Tastatur fokussiert wird;
+   beide Kontakt-Formulare (Tabs) sind untereinander sichtbar. */
+html:not(.js) .canvas_menu:focus-within { transform: none; }
+html:not(.js) .w-tab-pane { display: block; margin-bottom: 3rem; }
+
+/* Ohne JavaScript oder bei reduzierter Bewegung: Scroll-Animationsbereiche
+   (Sticky/Horizontal/Stapel) werden zu normalen, vollständig lesbaren Abschnitten. */
+html:is(:not(.js), .bewegung-reduziert) :is(.about_track, .work_items_track, .why_choose_track) { height: auto; }
+html:is(:not(.js), .bewegung-reduziert) .about_sticky {
+  position: static;
+  height: auto;
+  padding: 2rem 5%;
+}
+html:is(:not(.js), .bewegung-reduziert) .about_year_item_frame { width: 100%; }
+html:is(:not(.js), .bewegung-reduziert) .year_wrapper {
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 4rem;
+}
+html:is(:not(.js), .bewegung-reduziert) .work_items_wrapper {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+html:is(:not(.js), .bewegung-reduziert) .work_collection_list_wrapper { position: static; }
+html:is(:not(.js), .bewegung-reduziert) .why_choose_sticky { position: static; height: auto; }
+@media (min-width: 992px) {
+  html:is(:not(.js), .bewegung-reduziert) .why_choose_item { width: 32.5%; }
+}
+
+/* Einfache Hover-Effekte aus den Webflow-IX2-Interaktionen */
+@media (hover: hover) {
+  .hero_social_icon_link { transition: transform .35s ease; }
+  .hero_social_icon_link:hover { transform: scale(.9); }
+  .project_item .image-cover { transition: transform .35s cubic-bezier(.25, .46, .45, .94); }
+  .project_item:hover .image-cover { transform: scale(1.15); transition-duration: .5s; }
+}
+@media (hover: hover) and (min-width: 992px) {
+  /* Kunden-Raster: Kästchen leuchten beim Überfahren kurz hell auf */
+  .box { transition: background-color .5s ease; }
+  .box:hover { background-color: rgba(255, 255, 255, .8); }
+  /* Ablauf-Schritte: Plus-Icon wächst leicht */
+  .step_icon { transition: transform .5s ease; }
+  .step_icon:hover { transform: translate(-50%, -50%) scale(1.05); }
+  /* Auszeichnungen: dunkle Fläche wächst von unten, Texte rücken nach innen */
+  .award_item { transition: color .25s ease; }
+  .award_item_background { transition: transform .6s ease; }
+  .award_name, .award_status { transition: transform .5s ease; }
+  .award_item:hover { color: #fff; }
+  .award_item:hover .award_item_background { transform: scaleY(1); transition: transform .75s cubic-bezier(.215, .61, .355, 1); }
+  .award_item:hover .award_name { transform: translateX(1em); }
+  .award_item:hover .award_status { transform: translateX(-1em); }
+}
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
